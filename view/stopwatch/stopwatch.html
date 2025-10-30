@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STOPWATCH</title>
+</head>
+<style>
+    @font-face {
+    font-family: 'digital';
+    src: url('./fonts/LAB디지털.ttf') format('truetype');}
+
+    body {background-color:#0a495a; }
+    .button a {text-decoration: none; color:#fff;}
+    .stopwatch {width:350px; height:350px; border:15px solid #ccc; position:absolute; left:50%; top:50%; transform: translate(-50%,-50%); text-align: center; border-radius:50%; color:#fff;}
+    .stopwatch h2 {font-size:50px; margin:0;padding:65px 0 20px}
+    .stopwatch .time {font-size:45px; font-family: 'digital';}
+    .button {margin-top:30px; }
+    .button a { transition: 0.5s; background-color: #8b0000; width:40px; height: 30px; line-height: 30px; display: inline-block; padding:5px; border-radius: 10px;}
+    .button a:hover {background-color: #600000;}
+    .cat {position:absolute; left:50%; top:50%; transform: translate(-50%,-50%); z-index: -99999; opacity: 0.2;}
+    .cat img {width:500px;}
+    .time span {display: inline-block; width:50px;}
+    .record {width:40%;  margin:10% auto;  text-align: center; color:#fff; line-height: 2;}
+
+    @media (max-width: 450px) {
+        .cat {width:60%;}
+        .cat img {width:100%;}
+        }
+</style>
+<body>
+    <div class="stopwatch">
+        <h2>TIMER</h2>
+        <div class="time">
+            <span class="minute">00</span> : <span class="second">00</span> : <span class='tenMillis'>00</span>
+        </div>
+        <div class="button">
+            <a href="#a" class="sttBtn">▶</a>
+            <a href="#a" class="pauseBtn">| |</a>
+            <a href="#a" class="stopBtn">■</a>
+        </div>
+    </div>
+    <div class="record"></div>
+    <div class="cat">
+        <img src="images/cat.png" alt="">
+    </div>
+    <script>
+        let Minutes = 0;
+        let Seconds = 0;
+        let Tenmillis = 0;
+
+        let record = document.querySelector('.record');
+
+        const appendMinutes = document.querySelector('.minute');
+        const appendSeconds = document.querySelector('.second');
+        const appendTens = document.querySelector('.tenMillis');
+        const StartBtn = document.querySelector('.sttBtn');
+        const PausetBtn = document.querySelector('.pauseBtn');
+        const StopBtn = document.querySelector('.stopBtn');
+        
+        StartBtn.addEventListener('click',TimeGo);
+        PausetBtn.addEventListener('click',TimePause)
+        StopBtn.addEventListener('click',TimeStop)
+        let Interval;
+        
+
+        function TimeGo(){
+            clearInterval(Interval)
+            Interval = setInterval(operaterTiemer,10);
+        }
+
+        function TimePause(){
+            clearInterval(Interval)
+        }
+        function TimeStop(){
+            clearInterval(Interval)
+            Tenmillis = 0;
+            appendTens.textContent = "00";
+            Seconds = 0;
+            appendSeconds.textContent = "00";
+            Minutes = 0;
+            appendMinutes.textContent = "00";
+        }
+
+        
+        
+
+        function operaterTiemer(){
+            Tenmillis++;
+            appendTens.textContent = Tenmillis;
+
+            appendTens.textContent = Tenmillis > 9 ? Tenmillis : '0' + Tenmillis;
+
+            if(Tenmillis > 99){
+                Tenmillis = 0;
+
+                Seconds ++;
+                appendSeconds.textContent = Seconds;
+
+                appendSeconds.textContent = Seconds > 9 ? Seconds : '0' + Seconds;
+            }
+            if(Seconds > 59){
+                Seconds = 0;
+
+                Minutes ++;
+                appendMinutes.textContent = Minutes;
+
+                appendMinutes.textContent = Minutes > 9 ? Minutes : '0' + Minutes;
+            }
+        }
+    </script>
+</body>
+</html>

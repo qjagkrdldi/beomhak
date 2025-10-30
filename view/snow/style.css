@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+  box-sizing: border-box;
+}
+body{
+  margin:0;
+  font-family: 'Pacifico', cursive;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(#050414,#3A2766);
+}
+main h1 {
+  color:#fff;
+  animation: twincle 3s ease-in-out infinite alternate;
+}
+
+/* @keyframes twincle {
+  0% {opacity:0;}
+  100% {opacity: 1;}
+} */
+
+@keyframes fall {
+  0% {opacity:0;}
+  50% {opacity: 1;}
+  100% {top:100vh;}
+}
+@keyframes sway{
+  0%{margin-left:0;}
+  25%{margin-left:50px;}
+  50%{margin-left:-50px;}
+  75%{margin-left:50px;}
+  100%{margin-left:0;}
+}
+
+#snow-container {
+  position: absolute;
+  height: 100vh;
+  top:0;
+  width:100%;
+  transition: opacity 0.5s;
+  overflow: hidden;
+}
+#snow-container.hide{
+  opacity: 0;
+}
+.snow{
+  top:0;
+  left:50%;
+  position: absolute;
+  color:#5840AC;
+  animation:fall ease-in infinite, sway ease-in-out  infinite;
+}
+
+@media (max-width: 500px) {
+  main h1 {
+    font-size: 1rem;
+    font-weight: 100;
+  }
+}

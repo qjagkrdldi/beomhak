@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>LBH.Burger</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="default.css" />
+    <link rel="stylesheet" href="ui.css" />
+    <link rel="stylesheet" href="ui-page.css" />
+  </head>
+  <body>
+    <div class="page">
+      <!-- header -->
+      <header class="header">
+        <h1 class="website-title">
+          <img src="images/logo.png" alt="" />
+        </h1>
+        <form class="search-form">
+          <input type="search" />
+          <input type="submit" value="🍳" />
+        </form>
+        <a href="javascript:;" id="modal-switch" class="modal-switch">🍔</a>
+      </header>
+      <!-- menu -->
+      <ul class="menu">
+        <li class="menu-item">
+          <a href="#" class="menu-link">Menu</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">Store</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">What's New</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">Story</a>
+        </li>
+      </ul>
+      <div class="swiper mySwiper pcSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/slide01.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/slide02.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/slide03.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/slide04.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="swiper mySwiper mSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/m_slide01.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/m_slide02.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/m_slide03.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/m_slide04.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- <div class="content-container"> -->
+
+      <!-- primary -->
+      <section class="primary">
+        <ul class="card-list">
+          <li class="card-item">
+            <div>
+              <img src="./images/burger01.png" alt="" />
+            </div>
+            <div class="card-desc">McSpicy® TABASCO® Sauce & Nacho</div>
+          </li>
+          <li class="card-item">
+            <div>
+              <img src="./images/burger02.png" alt="" />
+            </div>
+            <div class="card-desc">Bacon Tomato Deluxe</div>
+          </li>
+          <li class="card-item">
+            <div>
+              <img src="./images/burger03.png" alt="" />
+            </div>
+            <div class="card-desc">Double Quarter Pounder® with Cheese</div>
+          </li>
+          <li class="card-item">
+            <div>
+              <img src="./images/burger04.png" alt="" />
+            </div>
+            <div class="card-desc">Double McSpicy® Shanghai Burger</div>
+          </li>
+          <li class="card-item">
+            <div>
+              <img src="./images/burger05.png" alt="" />
+            </div>
+            <div class="card-desc">Quarter Pounder® with Cheese</div>
+          </li>
+          <li class="card-item">
+            <div>
+              <img src="./images/burger06.png" alt="" />
+            </div>
+            <div class="card-desc">Double McSpicy® Shanghai Burger</div>
+          </li>
+          <li class="card-item">
+            <div>
+              <img src="./images/burger07.png" alt="" />
+            </div>
+            <div class="card-desc">McCrispy™ Classic Burger</div>
+          </li>
+          <li class="card-item">
+            <div>
+              <img src="./images/burger01.png" alt="" />
+            </div>
+            <div class="card-desc">Double Quarter Pounder® with Cheese</div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- secondary-a -->
+      <aside class="secondary secondary-a">
+        <!-- <ul class="info-list">
+          <li class="info-list-item">
+            159개국의 83,190명의 선수가 참가한 1988 서울 올림픽과 함께
+            맥도날드가 한국을 찾아왔습니다.
+          </li>
+          <li class="info-list-item">
+            전세계 120개국 3만 7천여 개의 매장에서 매일 6,900만명의 고객들에게
+            제품과 서비스를 제공하고 전세계인들이 사랑하는 퀵 서비스
+            레스토랑(QSR, Quick Service Restaurant)이자 세계 1위의 푸드서비스
+            기업으로, 고객에게 더 나은 경험을 제공함으로써 '고객이 가장 좋아하는
+            장소이자 음식을 즐기는 최고의 방법(Our Customer’s Favorite Place and
+            Way to Eat)'이 되기 위해 노력하고 있습니다.
+          </li>
+          <li class="info-list-item">
+            지난 31년 동안 국내 협력 업체와 긴밀하게 일하고, 현재 15,000여명의
+            직원이 근무하는 등 한국 사회의 고용 창출에 기여하고 있습니다.
+          </li>
+        </ul> -->
+        <!-- <ul class="user-list friend-list">
+          <li class="user-item friend-item">
+            <figure
+              class="user-photo"
+              style="background-image: url(images/drink.png)"
+            ></figure>
+            <p class="user-name">
+              품질은 최고의 재료, 엄격한 조리 방법 그리고 안전이 검증된 준비
+              방법, 뛰어난 맛을 지닌 제품을 말합니다.
+            </p>
+          </li>
+          <li class="user-item friend-item">
+            <figure
+              class="user-photo"
+              style="background-image: url(images/drink.png)"
+            ></figure>
+            <p class="user-name">
+              음식을 제공하는데 그치는 것이 아니라 고객의 행복과 즐거움이 되도록
+              노력하는 것입니다.
+            </p>
+          </li>
+        </ul> -->
+      </aside>
+      <!-- secondary-b -->
+      <aside class="secondary secondary-b">
+        <!-- <ul class="user-list message-list">
+          <li class="user-item message-item">
+            <figure
+              class="user-photo"
+              style="background-image: url(images/potato.png)"
+            ></figure>
+            <p class="message-content">
+              크록은 형제에게 미국 전역에 걸쳐 매장을 개장하는 비전을 제시하며
+              프랜차이즈 사업을 제안했습니다.
+            </p>
+          </li>
+          <li class="user-item message-item">
+            <figure
+              class="user-photo"
+              style="background-image: url(images/potato.png)"
+            ></figure>
+            <p class="message-content">
+              1984년 1월, 81세의 나이로 사망하기 직전까지 크록은 헌신 했습니다.
+              그는 새 가맹점이 문을 열 때마다 영업 첫날의 판매 보고서를 받아
+              철저히 검토했으며, 맥도날드의 당시 신임 경영진이 어떻게 회사를
+              이끌어 가는지 늘 관심을 갖고 지켜보았습니다.
+            </p>
+          </li>
+          <li class="user-item message-item">
+            <figure
+              class="user-photo"
+              style="background-image: url(images/potato.png)"
+            ></figure>
+            <p class="message-content">
+              크록의 신념은 프랜차이즈 파트너, 공급업체가 의자의 세 다리와 같은
+              역할을 해야만 맥도날드가 튼튼하게 바로설 수 있다는 의미의 ‘세 다리
+              의자(The Three-Legged Stool)’ 철학을 바탕으로 하고 있습니다.
+            </p>
+          </li>
+        </ul> -->
+      </aside>
+      <!-- </div> -->
+      <!-- footer -->
+      <footer class="footer">
+        COPYRIGHT © 2024 ALL RIGHTS RESERVED BY LBH.
+      </footer>
+    </div>
+    <div class="modal">
+      <div class="dialog">
+        <a href="javascript:;">🥨</a>
+        햄버거 몇개까지 먹을수있음?
+      </div>
+    </div>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+      });
+
+      const modalSwitch = document.querySelector(".modal-switch");
+      const closeBtn = document.querySelector(".dialog a");
+      modalSwitch.addEventListener("click", function () {
+        document.querySelector(".modal").style.display = "flex";
+      });
+      closeBtn.addEventListener("click", function () {
+        document.querySelector(".modal").style.display = "none";
+      });
+    </script>
+  </body>
+</html>

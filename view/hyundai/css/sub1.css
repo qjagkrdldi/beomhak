@@ -1,0 +1,23 @@
+@import url(common.css);
+
+
+/* //////////// sub1 회사소개 //////////// */
+
+
+/* 경영철학 */
+#container #contents_sub .info .img_manage { float:left; width:239px; height:239px; margin-right:40px; margin-bottom:40px; background:url(../images/img_manage.jpg); }
+#container #contents_sub .info h4 { font-size:14px; height:30px; }
+#container #contents_sub .info p { line-height:24px; margin-bottom:30px; }
+
+
+/* 연혁 */
+#container #contents_sub .history .img_history { float:left; width:657px; height:174px; margin-bottom:70px; background:url(../images/img_history.jpg); }
+#container #contents_sub .history table { width:657px; }
+#container #contents_sub .history table col.c1 { width:187px; }
+#container #contents_sub .history table th { text-align:left; vertical-align:top;  width:187px/*safari*/; }
+
+#container #contents_sub .history table dl dt { float:left; width:183px; height:12px; font-size:14px; font-weight:bold; }
+#container #contents_sub .history table dl dd { height:24px; margin-left:183px; }
+#container #contents_sub .history table dl dd.last { margin-bottom:42px; }
+#container #contents_sub .history table dl dd.last.end { margin-bottom:64px; }
+

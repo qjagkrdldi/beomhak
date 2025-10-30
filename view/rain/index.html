@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rain Drop</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow-y: hidden
+    }
+
+    h2 {position:absolute; left:50%; transform: translateX(-50%); top:0; font-size: 60px;}
+
+
+    .wrap {
+      width: 1100px;
+      height: 500px;
+      overflow: hidden;
+      position: relative;
+      background-color: #022A46;
+    }
+
+    .rain {
+      width: 5px;
+      height: 3px;
+      position: absolute;
+      left: 0;
+      top: -9999px;
+      background-color: #fff;
+    }
+
+
+    .cloud {
+      width: 2000px;
+      padding-top: 30px;
+      animation: cloud 40s infinite alternate
+    }
+
+    .cloud img {
+      width: 100%;
+    }
+
+    .bs {
+      margin-left: 100px;
+      position: absolute;
+      bottom: -100px;
+      z-index: 9999;
+    }
+
+    .ct {
+      position: absolute;
+      bottom: 80px;
+      opacity: .2;
+    }
+
+    .ct img {
+      width: 100%;
+    }
+
+    .bc {
+      width: 250px;
+      position: absolute;
+      right: 100px;
+      bottom: 0;
+    }
+
+    .bc2 {
+      width: 250px;
+      position: absolute;
+      right: 500px;
+      bottom: 0;
+    }
+
+    .bc img,
+    .bc2 img {
+      width: 100%;
+    }
+
+    .bus {
+      position: absolute;
+      width: 400px;
+      right: 0;
+      bottom: 0;
+      animation: bounce .1s infinite alternate;
+    }
+
+    .bus img {
+      width: 100%;
+    }
+
+    .dn {
+      width: 120px;
+      position: absolute;
+      left: 50%;
+      bottom: -10px;
+      transform: translateX(-50%);
+    }
+
+    .dn img {
+      width: 100%;
+    }
+
+    .light {
+      position: absolute;
+      width: 350px;
+      left: 50%;
+      bottom: -10px;
+      transform: translateX(-50%);
+    }
+
+    .light img {width:100%;}
+
+    @keyframes cloud {
+      0% {
+        transform: translateX(-900px);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes bounce {
+      0% {
+        transform: translateY(0);
+        transform: rotate(0);
+      }
+
+      100% {
+        transform: translateY(1px);
+        transform: rotate(.5deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="cloud">
+      <img src="images/cl.png" alt="">
+    </div>
+    <div class="bs">
+      <img src="images/bs.png" alt="">
+    </div>
+    <div class="ct">
+      <img src="images/ct.png" alt="">
+    </div>
+    <div class="bc">
+      <img src="images/bc.png" alt="">
+    </div>
+    <div class="bc2">
+      <img src="images/bc.png" alt="">
+    </div>
+    <div class="dn">
+      <img src="images/dn.png" alt="">
+    </div>
+    <div class="dn">
+      <img src="images/dn.png" alt="">
+    </div>
+    <div class="light">
+      <img src="images/light.png" alt="">
+    </div>
+    <div class="bus">
+      <img src="images/bus.png" alt="">
+    </div>
+    <div class="rain"></div>
+  </div>
+  <script>
+
+    var wrap = $(".wrap");
+    var rain = $(".rain");
+
+    function motion() {
+      var temp = rain.clone();
+      wrap.append(temp);
+      temp.css({
+        left: Math.floor(Math.random() * 1900),
+        top: -180,
+        width: Math.floor(Math.random() * 5),
+        height: Math.floor(Math.random() * 50 + 20),
+        opacity: Math.random(),
+      });
+      temp.animate({ top: 650, opacity: 0.5 }, 3000, function () {
+        $(this).remove();
+      });
+    }
+    setInterval(motion, 50);
+
+    let busSpd = 0;
+
+    function busStart() {
+      busSpd = busSpd + 2;
+      if (busSpd > 1100) {
+        busSpd = -400;
+      }
+      $('.bus').css({ right: busSpd });
+      console.log(busSpd)
+    }
+
+    setInterval(busStart, 30)
+
+    function lightMotion() {
+      $(".light").fadeOut(1800, function () {
+        $(this).fadeIn(1800, function () {
+          lightMotion();
+        });
+      });
+    };
+    lightMotion();
+
+  </script>
+</body>
+
+</html>

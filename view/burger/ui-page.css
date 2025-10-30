@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cormorant+Infant&family=Cossette+Titre:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Myeongjo&family=Noto+Sans:ital,wdth@0,62.5..100;1,62.5..100&family=Public+Sans:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 80px;
+	padding:0 1rem;
+	background-color: #fff;
+}
+
+.header h1 {
+	width:63px;
+	min-width: 63px;
+	margin-right: 1rem;
+}
+
+/* header에 justify-content: space-between; 대신 사용 가능 */
+.search-form {
+	margin-left:auto;
+	margin-right: 1rem;
+}
+.search-form {
+	width:300px;
+	max-width: 60%;
+}
+.primary {
+	padding:1rem;
+}
+.secondary {
+	padding:1rem;
+} 
+.secondary-a {
+	background-color: #F5EBDC;
+	color:#DC2300;
+	font-weight: bold;
+}
+.secondary-b {
+	color:#DC2300;
+	background-color: #F5EBDC;
+	font-weight: bold;
+}
+.footer {
+	padding:1rem; 
+	text-align: center;
+	background-color: #292929;
+	color:#fff;
+}
+.modal {
+	display: none;
+}
+#modal-switch {font-size: 2rem; text-decoration: none;}
+.dialog {position:relative;}
+.dialog a {position:absolute; right:1rem; top:1rem;}
+
+@media (min-width: 1024px){
+.page {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1440px;
+	margin-inline: auto;
+}
+.header {
+	width:100%;
+}
+.menu {
+	width:100%;
+}
+.secondary {
+	width:20%;
+	line-height: 1.5;
+}
+.secondary-a{
+	order:1
+}
+.secondary-b{
+	order:3;
+}
+.primary{
+	order:2;
+	width:60%;
+}
+.footer {
+	padding:1rem;
+	order:4;
+	width:100%;
+}
+.friend-list {
+	margin-top:5rem;
+}
+}
+
+@media (min-width: 1400px){
+	.primary{
+		width:calc(100% - 600px);
+	}
+	.secondary{
+		width:300px;
+	}
+}

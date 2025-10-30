@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Swiper 접근성 alt 텍스트 예제</title>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <style>
+    .swiper {
+      width: 100%;
+      max-width: 600px;
+      height: 300px;
+      margin: 2rem auto;
+    }
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* 스크린 리더용 숨김 클래스 */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Swiper 슬라이더 -->
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="https://placehold.co/600x400" alt="풍경 이미지 1 - 해변의 일출"></div>
+      <div class="swiper-slide"><img src="https://placehold.co/600x400" alt="풍경 이미지 2 - 숲 속의 아침 안개"></div>
+      <div class="swiper-slide"><img src="https://placehold.co/600x400" alt="풍경 이미지 3 - 산 정상에서 본 풍경"></div>
+    </div>
+    <!-- 슬라이드 내비게이션 버튼 -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <!-- 페이지네이션 -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- 스크린 리더용 텍스트 영역 -->
+  <div id="sr-alt-text" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: false,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+       keyboard: {
+        enabled: true,
+        onlyInViewport: true
+      },
+      on: {
+        init: updateAltText,
+        slideChange: updateAltText
+      }
+    });
+
+    function updateAltText() {
+      const activeSlide = swiper.slides[swiper.activeIndex];
+      const img = activeSlide.querySelector('img');
+      const altText = img ? img.alt : '';
+      document.getElementById('sr-alt-text').textContent = altText;
+    }
+  </script>
+</body>
+</html>

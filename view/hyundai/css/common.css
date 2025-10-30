@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+
+/* reset */
+html,body { width:100%; height:100%; }
+body,div,p,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,button,input,legend { margin:0; padding:0; }
+body,h1,h2,h3,h4,input,button { font-size:12px; }
+ul,li,ol { list-style:none; }
+img,fieldset,iframe { border:0; }
+img { vertical-align:top; }
+table { border-collapse:collapse; }
+
+
+/* base */
+body { font:12px/18px "돋움";  color: #767676; }
+body.main { background:#e1e1e1 url(../images/bg.jpg) no-repeat center top; }
+a { text-decoration: none; color: #767676; }
+a:hover { color:#f93; }
+.skip_navigation a { position:absolute; top:-9999px; font-size:0; }
+.skip_navigation a:focus { left:0; top:0; padding:5px; font-size:14px; color:white; background-color:#168eea; }
+.blind { position:absolute; top:-9999px; font-size:0; }
+
+
+/* layout */
+#header { background-color:rgba(37,37,37,1); }
+#header.main { background-color:rgba(37,37,37,0.5); }
+#header .inner { position:relative; margin:0 auto; width:978px; height: 70px; }
+
+#visual { height: 510px;  }
+#visual .inner { position:relative; margin:0 auto; width:978px; height: 510px;  }
+
+#contents { margin:0 auto; margin-top:59px; margin-bottom:65px; width:978px; height:778px; }
+
+#footer { background:#fff; }
+#footer .inner { position:relative; margin:0 auto; width:978px; height:130px; }
+
+
+/* header */
+#header .inner h1 { position:absolute; left:27px; top:25px; }
+#header .inner .gnb { position:absolute; left:240px; top:30px; }
+#header .inner .gnb li { float: left; width: 42px; margin-right: 43px; }
+#header .inner .search { position:absolute; right:23px; top:25px; width:120px; height:20px; }
+#header .inner .search #t1 {width:95px; height:20px; border:0; }
+#header .inner .search input {float:left;}
+
+
+/* footer */
+#footer .inner .f_logo { position:absolute; left:27px; top:58px; }
+#footer .inner .address { position:absolute; left:167px; top:53px; }
+#footer .inner .copyright { position:absolute; left:167px; top:74px; }
+#footer .inner .f_link { position:absolute; left:514px; top:74px; }
+#footer .inner .f_link li { float:left; }
+#footer .inner .f_link .last { padding-left:12px; background:url(../images/line.gif) no-repeat 6px 0px; }
+
+
+
+/* //////////// sub 공통 //////////// */
+body.sub { background:#e1e1e1; }
+
+#container { margin:0 auto; width:977px; padding:42px 0; /* overflow:hidden; */ }
+#container:after { content:""; display:block; clear:both; }
+#container #sidebar { float:left; padding:48px 33px 32px 33px; width:101px; background:#fff; }
+#container #contents_sub { position:relative; float:right; padding:74px 63px 40px 63px; width:656px; background:#fff; }
+
+/* sidebar */
+#container #sidebar h2 { height:63px; }
+#container #sidebar .lnb li { height:30px; }
+
+/* contents_sub */
+#container #contents_sub h3 { height:59px; }
+#container #contents_sub .slogan { height:109px; }
+#container #contents_sub .pp { position:absolute; right:63px; top:37px; }
+#container #contents_sub .pp span { color:#b1b1b1; }

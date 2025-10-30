@@ -1,0 +1,38 @@
+@import url(common.css);
+
+
+/* reset */
+html,body { width:100%; height:100%; }
+body,div,p,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,legend,button,input { margin:0; padding:0; }
+body,h1,h2,h3,h4,input,button { font-size:12px; }
+ul,li,ol { list-style:none; }
+img,fieldset,iframe { border:0; }
+img { vertical-align:top; }
+table { border-collapse:collapse; }
+
+/*basic*/
+body {background: url(../images/bg.jpg) no-repeat center top; color:#ffff; font-size: 11px;}
+a {text-decoration: none; color:#ffff;}
+
+/*layout*/
+header {height:160px; background:none}
+header .inner {position:relative; margin:0 auto; width:960px; height:160px;}
+section {position:relative; margin:0 auto;width:1280px; height:800px; margin-bottom: 160px;}
+footer {background:rgba(0,0,0,0.7); height:160px;}
+footer .inner {position:relative; margin:0 auto; width:960px; height:160px; }
+
+/*header*/
+header h1 {padding-top: 68px;}
+header .gnb {position:absolute; right:0; top:75px; }
+.section {width:1280px; height: 800px; margin:0 auto;}
+
+/*footer*/
+footer h1 {padding-top: 71px;}
+footer .copy {position:absolute; left:380px; top:77px;}
+footer .sns {position:absolute; top:56px; right:30px;}
+footer ul li {float:left;}
+footer ul li:nth-child(4)  {padding-left: 13px;}
+footer ul li:nth-child(3)  {padding-left: 17px;}
+footer ul li:nth-child(2) {padding-left: 17px;}
+footer .sitemap {position:absolute; right:0; }
+footer .sitemap li {background:url(images/bar.png)no-repeat 7px 5px; }

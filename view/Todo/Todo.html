@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <script src="https://kit.fontawesome.com/963f88605e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<style>
+    @font-face {
+    font-family: 'KyoboHandwriting2022khn';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KyoboHandwriting2022khn.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+    body {background-color: #835c5c; font-family: 'KyoboHandwriting2022khn';}
+    #wrap {margin:0 auto;width:550px; min-width: 300px; text-align: center; color:#fff; position:absolute; left:50%; top:50%; transform: translate(-50%,-50%);}
+    #wrap h1 {font-size:60px; margin-top:80px;}
+    .listInput {background:rgba(255,255,255,.2); padding:10px; width:60%; margin:0 auto; border-radius: 30px; position:relative;}
+    .listInput input {background:0; width:80%; height:20px; color:#fff; border:0; font-size: 20px; outline: none;}
+    .listInput #addButton {background:none; border:none; color:#fff; border-radius: 50px; position:absolute; top:13px; right: 16px;}
+    #toDoList {text-align: left; width:350px; margin:20px auto; position: relative;}
+    #toDoList div:not(:first-child) {margin-top:10px;}
+    #toDoList div {display: flex; gap: 10px; justify-content: space-evenly; align-items: center;}
+    #toDoList div button {background:#835c5c; border:none; color:#533939; border-radius: 50px; padding:5px;
+    }
+    #toDoList .alldel {position:absolute; right:-35px; top:5px; cursor: pointer; display: none;}
+
+    input[type=checkbox] + label {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #bcbcbc;
+	cursor: pointer;
+    }
+
+    input[type=checkbox]:checked + label {
+    position:relative;
+    }
+
+    input[type=checkbox]:checked + label::after {
+        display: block;
+        position: absolute;
+        left:0;
+        top:-16px;
+        content:'\f00c';
+        font-family: "Font Awesome 5 Free";
+        font-weight:600;
+        font-size: 34px;
+        color:red;
+    }
+
+    input[type=checkbox] {
+	display: none;
+    }
+
+    #toDoList div button::after {
+        display: block;
+        content:'\f056';
+        font-family: "Font Awesome 5 Free";
+        font-weight:600;
+        font-size: 23px;
+        cursor: pointer;
+    }
+    @media (max-width: 600px) {
+        #wrap { width:80%; }
+        #wrap h1 {margin-top:0;}
+        .listInput {padding:1% 0; width:100%;}
+        #toDoList {width:85%;}
+        #toDoList .alldel {right:-9%; text-align: right;}
+        input[type=checkbox] + label {width:30px;}
+        .listInput #addButton {top:21%;}
+        }
+</style>
+<body>
+    <div id="wrap">
+        <h1>To Do List</h1>
+        <div class="listInput">
+            <input id="toDo" type="text">
+            <button id="addButton"><i class="fas fa-solid fa-plus"></i></button>
+        </div>
+        <div id="toDoList">
+            <div class="alldel"><i class="fas fa-trash"></i></div>
+        </div>
+    </div>
+
+    <script>
+        
+    const addBtn = document.querySelector('#addButton');
+    const toDo = document.querySelector('#toDo');
+    const Todolist = document.querySelector('#toDoList');
+    const AllDel = document.querySelector('.alldel');
+
+    
+    addBtn.style.display = 'none';
+    toDo.addEventListener('keyup',function(){
+        addBtn.style.display = 'block';
+        console.log(toDo.value)
+        if(toDo.value == ''){
+            addBtn.style.display = 'none';
+        }
+    })
+   
+    var i = 0;
+
+    addBtn.addEventListener('click',function(e){
+
+        i++;
+
+        const item = document.createElement("div");
+        const text = document.createElement('span');
+        const Del = document.createElement('button');
+        const Check = document.createElement('input');
+        const Label = document.createElement('label');
+
+        AllDel.style.display = 'block';
+        
+        Label.setAttribute("for","chckbox" + i);
+
+        text.style.width = '285px';
+        text.style.fontSize = '20px';
+
+        Check.setAttribute('type','checkbox');
+        text.textContent = toDo.value;
+
+        Check.id = 'chckbox' + i;
+
+
+        Check.addEventListener('change',() => {
+            if(Check.checked){
+                text.style.textDecorationLine = 'line-through';
+            }else{
+                text.style.textDecorationLine = 'none';
+            }
+        })
+
+        Del.addEventListener('click',(e) => {
+            e.currentTarget.parentNode.parentNode.removeChild(e.currentTarget.parentNode)
+            if(Todolist.getElementsByTagName('div').length < 2){
+            AllDel.style.display = 'none';
+            }
+        })
+
+        AllDel.addEventListener('click',()=>{
+            item.remove();
+            AllDel.style.display = 'none';
+        })
+
+        item.appendChild(Check);
+        item.appendChild(Label);
+        item.appendChild(text);
+        item.appendChild(Del);
+        Todolist.appendChild(item);
+        toDo.value = '';
+        addBtn.style.display = 'none';
+    })
+
+    
+
+    toDo.addEventListener('keyup',function(e){
+        
+        if(e.keyCode === 13){
+            document.querySelector("#addButton").click();
+        }
+       
+    })
+    </script>
+</body>
+</html>

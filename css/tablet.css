@@ -1,0 +1,27 @@
+@charset "utf-8";
+#header h1 {margin:0; left:5%;}
+#header #gnb2 {margin:0; right:5%;}
+#about_me {padding:0 0 65px 0;}
+#about_me .inner {width:80%;}
+#about_me .inner .slogan {color:#E50914;}
+#about_me .inner .slogan span {display: block;}
+#about_me .inner .frame img {width:100%;}
+.profile_group_tablet {display: block;}
+#ms_m {display: block;  position: absolute; right:0px; bottom:-20px; width:100%;}
+#ms_m li {display: block; float:left;  font-size: 15px; width:33.33%;}
+#ms_m li p {display: block; margin-left: 50px;}
+#ms_m li:first-child p {display: block; margin:0;}
+#ms_m li:last-child p {float:right;}
+#ms {display: none;}
+.pop .det {width:80%; height:0; padding:40px 0 0 0;}
+.pop .dc {left:-14px;}
+.pop .det .close {right:50px;}
+.pop .det img {width:100%;}
+.pop h2 {font-size:40px; padding-left:0;}
+.pop h4 {padding:0; display: block;}
+.pop .p2 {font-size:13px;}
+#about_me .profile_group_tablet p {display: none;}
+#about_me .profile_group_tablet dl {position: absolute; left:50%; top:180px;}
+#about_me .profile_group_tablet dl dt {float:left; font-weight:500; font-size: 15px; color:#E50914}
+#about_me .profile_group_tablet dl dd {margin-left:140px; font-weight: 300; height:30px;font-size: 15px; color:#767676; }
+#about_me .profile_group_tablet .profile_tablet {position:relative; left:145px; top:130px;font-weight: bold;}

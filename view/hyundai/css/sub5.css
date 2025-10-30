@@ -1,0 +1,32 @@
+@import url(common.css);
+
+
+/* //////////// sub5 홍보센터 //////////// */
+
+
+/* 뉴스레터 */
+#container #contents_sub .newsletter input,
+#container #contents_sub .newsletter label { vertical-align:middle; }
+#container #contents_sub .newsletter .agree { padding:33px 20px; background:#f8f8f8; border-top:1px solid #b5b6b8; border-bottom:1px solid #b5b6b8; }
+#container #contents_sub .newsletter .agree h4 { font-size:14px; }
+#container #contents_sub .newsletter .agree h4.last { margin-top:48px; }
+#container #contents_sub .newsletter .agree .text { overflow:auto; height:91px; margin-top:18px; margin-bottom:11px; padding:10px; line-height:24px; background:#fcfcfa; border:1px solid #e1e1e1; }
+#container #contents_sub .newsletter .agree .text h5 { font-size:12px; }
+#container #contents_sub .newsletter .agree .text p { margin-bottom:25px; }
+
+#container #contents_sub .newsletter .all_agree { margin-top:12px; margin-bottom:51px; font-weight:bold; }
+
+#container #contents_sub .newsletter .ps_info { padding:25px 20px; border-top:1px solid #b5b6b8; border-bottom:1px solid #b5b6b8; }
+#container #contents_sub .newsletter .ps_info dt { float:left; width:174px; padding-top:5px; font-size:14px; font-weight: bold; }
+#container #contents_sub .newsletter .ps_info dd { height:40px; }
+#container #contents_sub .newsletter .ps_info dd input { width:226px; height:23px; border:1px solid #e1e1e1}
+#container #contents_sub .newsletter .btn_area { text-align:center; padding-top:35px; padding-bottom:42px; }
+#container #contents_sub .newsletter input[type=submit] { border:0; padding:7px 16px; color:white; font-weight:bold; background:#00b65d; cursor:pointer; }
+
+
+
+
+
+
+
+

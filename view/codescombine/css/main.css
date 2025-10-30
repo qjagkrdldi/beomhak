@@ -1,0 +1,21 @@
+@import url(common.css);
+
+
+
+
+
+/* layout */
+header { height:50px; background:#000; }
+#container {position:relative;  }
+footer { height:120px; background:#000; }
+
+
+
+
+
+/* container */
+#container .main_visual img { width:100%; }
+#container .quick_link:after {content:""; display: block; clear:both;}
+#container .quick_link li { float:left; width:33.33%; }
+#container .quick_link li img {width:100%;}
+#container .quick_link {position:absolute; width:100%; left:0; bottom:0; }

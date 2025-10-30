@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>hyundai</title>
+<script src="js/default.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="skip_navigation">
+	<a href="#contents">본문 바로가기</a>
+</div>
+<div id="header">
+   <div class="inner">
+      <h1><a href="#"><img src="images/logo.png" alt="Hyundai" /></a></h1>
+	  <h2 class="blind">주요메뉴</h2>
+      <ul class="gnb">
+          <li><a href="sub1-1.html"><img src="images/gnb1.png" onmouseover="src='images/gnb1-on.png'" onmouseout="src='images/gnb1.png'" alt="" /></a></li>
+          <li><a href="#"><img src="images/gnb2.png" onmouseover="src='images/gnb2-on.png'" onmouseout="src='images/gnb2.png'" alt="" /></a></li>
+          <li><a href="#"><img src="images/gnb3.png" onmouseover="src='images/gnb3-on.png'" onmouseout="src='images/gnb3.png'" alt="" /></a></li>
+          <li><a href="#"><img src="images/gnb4.png" onmouseover="src='images/gnb4-on.png'" onmouseout="src='images/gnb4.png'" alt="" /></a></li>
+          <li><a href="sub5-1.html"><img src="images/gnb5.png" onmouseover="src='images/gnb5-on.png'" onmouseout="src='images/gnb5.png'" alt="" /></a></li>
+          <li><a href="#"><img src="images/gnb6.png" onmouseover="src='images/gnb6-on.png'" onmouseout="src='images/gnb6.png'" alt="" /></a></li>
+          <li><a href="#"><img src="images/gnb7.png" onmouseover="src='images/gnb7-on.png'" onmouseout="src='images/gnb7.png'" alt="" /></a></li>
+      </ul>
+      <div class="search">
+        <form action="#">
+          <fieldset>
+            <legend class="blind">통합검색</legend>
+            <label for="t1" class="blind">검색어 입력:</label>
+            <input type="text" id="t1" />
+            <input type="image" src="images/search_btn.gif" alt="검색" />
+          </fieldset>
+        </form>
+      </div>
+    </div>
+</div>
+
+<div id="visual">
+	<div class="inner">
+		<div class="gallery">
+        <div id="sm_gallery">
+            <div class="mas">
+                <div id="sm_gall">
+                    <ul id="sm_set">
+                      <li><a href="#"><img src="images/visual01.jpg" alt="이미지1"  /></a></li>
+                      <li><a href="#"><img src="images/visual02.jpg" alt="이미지2"  /></a></li>
+                      <li><a href="#"><img src="images/visual03.jpg" alt="이미지3"  /></a></li>
+                      <li><a href="#"><img src="images/visual04.jpg" alt="이미지4"  /></a></li>
+                      <li><a href="#"><img src="images/visual05.jpg" alt="이미지5"  /></a></li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="nav">
+              <li><a href="#" id="g1" onclick="sm_j=1; sn(); sm_targetX=0-sm_w*0;"></a></li>
+              <li><a href="#" id="g2" onclick="sm_j=2; sn(); sm_targetX=0-sm_w*1;"></a></li>
+              <li><a href="#" id="g3" onclick="sm_j=3; sn(); sm_targetX=0-sm_w*2;"></a></li>
+              <li><a href="#" id="g4" onclick="sm_j=4; sn(); sm_targetX=0-sm_w*3;"></a></li>
+              <li><a href="#" id="g5" onclick="sm_j=5; sn(); sm_targetX=0-sm_w*4;"></a></li>
+            </ul>
+            <div class="prev"><a href="#" onclick="smPrev();"><img src="images/prev.png" alt="이전"></a></div>
+            <div class="next"><a href="#" onclick="smNext();"><img src="images/next.png" alt="다음"></a></div>
+        </div>
+		</div>
+	</div>
+</div>
+
+<div id="contents">
+    <div class="section1">
+        <a href="#"><img src="images/m_img1.jpg" alt="경영이념" /></a>
+        <h2><a href="#"><strong>경영이념</strong></a></h2>
+        <p><a href="#">창의적 사고와 끝없는 도전을 통해 새로운 미래를 창조함으로써 인류사회의 꿈을 실현합니다.</a></p>
+    </div>
+    <div class="section2">
+        <a href="#"><img src="images/m_img2.jpg" alt="기술혁신" /></a>
+        <h2><a href="#"><strong>기술혁신</strong></a></h2>
+        <p><a href="#">트랜드 분석과 기술개발을 통해 미래 모빌리티를 선도합니다.</a></p>
+    </div>
+    <div class="section3">
+        <a href="#"><img src="images/m_img3.jpg" alt="전력투자" /></a>
+        <h2><a href="#"><strong>전략투자</strong></a></h2>
+        <p><a href="#">신규사업의 기회 발굴 및 신기술 확보를 통해 미래 가치를 만들어 냅니다.</a></p>
+    </div>
+    <div class="section4">
+        <a href="#"><img src="images/m_img4.jpg" alt="공지사항" /></a>
+        <div class="tab_bt">
+          <h2 class="active"><a href="#a"><strong data-id="0">공지사항</strong></a></h2>
+          <h2><a href="#a"><strong data-id="1">공시자료</strong></a></h2>
+        </div>
+        <ul class="show">
+          <li><a href="#">봄처럼 따뜻한 브런치 레시피, 이번 주말 봄나들이 때 남다른... <span class="date">20-05-12</span></a></li>
+          <li><a href="#">인재채용 - 현대의 이름으로 당신을 초대합니다.. <span class="date">20-03-24</span></a></li>
+        </ul>
+        <ul>
+          <li><a href="#">특수관계인으로부터기타유가증권매수... <span class="date">23-04-12</span></a></li>
+          <li><a href="#">임원ㆍ주요주주특정증권등소유상황보고서.. <span class="date">23-04-24</span></a></li>
+        </ul>
+    </div>
+    <div class="section5">
+        <a href="#"><img src="images/m_img5.jpg" alt="보도자료" /></a>
+        <h2><a href="#"><strong>보도자료</strong></a></h2>
+        <ul>
+          <li><a href="#">크롬 라디에이터 그릴 모든 트림 적용해 전면부 디자인 고급스러움 높여</a></li>
+          <li><a href="#">스마트 트림에 고객 선호 옵션을 조합한 ‘베스트 초이스’ 패키지 선보여</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="footer">
+  <div class="inner">
+    <h2 class="blind">저작권자 및 기타정보</h2>
+        <div class="f_logo"><img src="images/f_logo.gif" alt="" /></div>
+        <p class="address"><img src="images/address.gif" alt="" /></p>
+        <p class="copyright"><img src="images/copyright.gif" alt="" /></p>
+        <ul class="f_link">
+            <li><a href="#"><img src="images/f_link1.gif" alt="" /></a></li>
+            <li><a href="#"><img src="images/f_link2.gif" alt="" /></a></li>
+        </ul>
+    </div>
+</div>
+
+<script>
+  var tabBtn = $('.tab_bt > h2');
+  var tabCont =  $('.section4 > ul');
+  
+//   tabBtn.eq(0).click(e=>{
+//     tabBtn.removeClass('active');
+//     tabCont.removeClass('show');
+//     tabBtn.eq(0).addClass('active');
+//     tabCont.eq(0).addClass('show');
+//   })
+// tabBtn.eq(1).click(e=>{
+//   tabBtn.removeClass('active');
+//     tabCont.removeClass('show');
+//     tabBtn.eq(1).addClass('active');
+//     tabCont.eq(1).addClass('show');
+//   })
+
+$('.tab_bt > h2').click(function(e){
+  tabOpen(e.target.dataset.id)
+  console.log(e.target.dataset.id);
+});
+
+
+
+  function tabOpen(op){
+    tabBtn.removeClass('active');
+    tabCont.removeClass('show');
+    tabBtn.eq(op).addClass('active');
+    tabCont.eq(op).addClass('show');
+  }
+
+  
+</script>
+
+</body>
+</html>

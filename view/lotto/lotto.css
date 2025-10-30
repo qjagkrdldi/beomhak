@@ -1,0 +1,13 @@
+body {background-color:#006928;}
+.lotto { width:500px; position:absolute; left:50%; top:50%; transform: translate(-50%,-50%); text-align: center;}
+.numbers {display: flex; justify-content: space-around; width:400px; height:52px; border:2px solid #fff; margin:30px auto; padding:10px;}
+.numbers > div {width:50px; height:50px; border-radius: 50%; line-height: 50px; color:#fff; border:2px solid #fff; font-size:15px; font-weight: bold;}
+.lotto h3 {color:#fff; font-size: 50px; margin-bottom:20px;}
+.lotto button {background:none; border:0; padding:10px 20px; border-radius:10px; color:#fff; font-size:20px;}
+
+@media (max-width: 450px) {
+    .lotto {width:100%;}
+    .numbers  {
+      width:80%;
+    }
+  }

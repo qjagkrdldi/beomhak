@@ -1,0 +1,72 @@
+@import url(common.css);
+
+/*visual*/
+.typo {text-align: center; padding-top:587px;}
+
+/*contents*/
+
+#contents {position:relative; }
+.group1 {margin:0 auto; width:1100px; height:563px;}
+.group1  ul li {float:left; width:250px;overflow: hidden; position:relative; }
+.group1  ul li .b_box {position:absolute; left:0; top:0; width: 100%; 
+    background: rgba(0,0,0,0.6); text-align: center;
+     height: 100%; line-height: 362px; font-size: 22px; opacity: 0;
+    transition: 0.5s;}
+.group1  ul li img {width:100%;}
+.group1  ul li img {transition: 0.5s; }
+.group1  ul li img:hover {transform:scale(1.2,1.2);}
+.group1  ul li~li {margin-left: 33px;}
+
+.group2 {padding-top: 50px; }
+.group2 .ti {transition:0.5s;display: inline-block;}
+.group2 .ti:hover {opacity: 0.7;}
+.group2 .ti-r {position:absolute; right:0; top:895px;}
+.group2 .ti-r p {position:absolute; right:50px; top:20px; font-size: 30px; font-weight: 500;}
+.group2 .ti-r p span {font-size: 20px; font-weight: 300;}
+.group2 > p {position:absolute; right:50px; top:650px; font-size: 15px; line-height: 25px;}
+h2 {text-align: center; font-size: 30px; padding-top: 83px; line-height: 50px;}
+h2 span {font-size: 30px; font-weight: 300;}
+
+.slider {text-align: center;}
+.slider .rbx {position:absolute; bottom:0; width:380px; height:61px; background: #8e0000;}
+.slider .rbx p {font-size: 20px; font-weight: 500; line-height: 61px;}
+.slider ul li {width:379px; height:523px; background: #fff; float:left; }
+.slider .bx1 .bx1-g .bx1-2 {float:right;}
+.slider .bx2 .bx2-g .bx2-2 {float:right;}
+
+
+.bx-pager {display:none;}
+
+.bx-wrapper {position:relative; width:844px; padding-top: 80px;}
+.bx-controls-direction {font-size: 50px;}
+.bx-controls-direction a {position:absolute; top:50%; transform:translateY(10%); display:block; width:50px; height:110px; overflow: hidden; color:#000;}
+.bx-controls-direction .bx-prev {left:0;}
+.bx-controls-direction .bx-next {right:0;}
+.bx-controls-direction .bx-prev:before {content:"\e93d"; font-family: "xeicon";}
+.bx-controls-direction .bx-next:before {content:"\e940"; font-family: "xeicon";}
+
+.bx1 .bx1-g .bx1-1 .gh {padding-top: 30px;}
+.bx1 .bx1-g .bx1-1 .gh img {width:400px;}
+.bx1 .bx1-g .bx1-2 .le {padding-top: 30px;}
+.bx1 .bx1-g .bx1-2 .le img {width:400px;}
+
+.bx2 .bx2-g .bx2-1 .gr {padding-top: 30px;}
+.bx2 .bx2-g .bx2-1 .gr img {width:400px;}
+
+.bx2 .bx2-g .bx2-2 .qu {padding-top: 30px;}
+.bx2 .bx2-g .bx2-2 .qu img {width:400px;}
+
+h3 {color:#000; font-size: 20px; padding-top: 15px;}
+h4 {color:#000; font-size: 30px; font-weight: 300; padding-top: 40px;}
+h5 {color:#000; font-size: 45px;}
+
+.see {position:absolute; right:0; bottom:-60px; width:378px; height:584px; background: rgba(142,0,0,0.7); }
+.see h4 {text-align: center; margin-top: 40px; font-size: 20px; font-weight: 500; color:#fff;}
+.see p  {text-align: center; font-size: 15px; font-weight: 300; padding-top: 20px;}
+.see > ul {text-align: center; margin-top: 50px;}
+.see ul li {padding: 0 0 25px; }
+.see .bt ul {margin-left: 42px;}
+.see .bt ul li {float:left;}
+.see ul li input {width:298px; height:44px; text-indent:16px; font-size: 13px;}
+.see .bt ul li button {float:left; background: #fff; border:none;width:150px; height:44px; vertical-align: middle;}
+.see .bt ul .sb  button {background: #000; color:#fff;}

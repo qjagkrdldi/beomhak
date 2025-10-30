@@ -1,0 +1,953 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>LBH.story</title>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" media="(min-width:501px) and (max-width:1199px)" href="css/tablet.css">
+    <link rel="stylesheet" media="(min-width:0px) and (max-width:500px)" href="css/mobile.css">
+    <link rel="shortcut icon" href="images/bana.ico">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&display=swap&subset=korean"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/default.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <div id="header" class="pcHead">
+        <div id="gnb" class="">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#container">ART WORK</a></li>
+                <li><a href="#about_me">ABOUT ME</a></li>
+            </ul>
+        </div>
+        <ul id="gnb2" class="hidden md:block">
+            <li><a href="#">All</a></li>
+            <li><a href="#">Coding</a></li>
+            <li><a href="#">Design</a></li>
+        </ul>
+    </div>
+    <div id="home" class="hidden md:block">
+        <h1 class="flex justify-center pt-[80px]"><a href="#"><img src="images/logo01.png" alt="logo"></a></h1>
+        <ul class="nav">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#container">ART WORK</a></li>
+            <li><a href="#about_me">ABOUT ME</a></li>
+        </ul>
+    </div>
+
+    <!-- 모바일컨텐츠 -->
+
+    <div class="m_cont block md:hidden bg-gray-900">
+        <header class="sticky top-0 z-50 bg-gray-800 text-gray-100 bg-opacity-90 backdrop-blur-lg">
+            <nav class="container max-w-4xl mx-auto px-6 py-3 flex justify-center items-center">
+                <div class="flex items-center space-x-4">
+                    <h1 class="text-2xl font-bold text-center">Lee.Beomhak</h1>
+                </div>
+            </nav>
+        </header>
+        <main class="container max-w-4xl mx-auto px-6 py-12">
+            <!-- Home Section -->
+            <section class="flex flex-col md:flex-row justify-between items-center mb-12">
+                <div class="shrink-0">
+                    <img class="w-56 h-56 rounded-full border-2 object-cover hover:border-red-600 transition-colors duration-1000"
+                        src="https://api.dicebear.com/9.x/lorelei/svg?seed=Nolan" alt="avatar" />
+                </div>
+                <div class="text-center md:text-right">
+                    <h1 class="text-4xl font-bold mb-4 pt-5 text-white">이범학</h1>
+                    <p class="text-xl mb-2 text-gray-200">ESFJ</p>
+                    <span class="text-sm bg-rose-700 text-white px-3 py-1 mb-5 inline-block rounded-full">사교적인 외교관
+                    </span>
+                    <p class="text-white md:text-left break-keep text-[4vw]" data-aos="fade-up">
+                        디자인과 개발을 연결하는 퍼블리셔로서<br> 더욱 성장하고자 합니다. <br>
+                        최신 웹 트렌드와 기술을 습득하고,<br> UI/UX 디자인의 원리를 더욱 깊이 연구하여,
+                        사용자가 더 나은 경험을 할 수 있는 웹사이트를 제작하는 것이 저의 목표입니다.<br>
+                        앞으로도 디자인적 감각을 살리면서<br> 기술적인 완성도를 높여,
+                        더욱 가치 있는 웹 환경을 구축하는 퍼블리셔가 되겠습니다.
+                    </p>
+                </div>
+            </section>
+            <!-- About Section -->
+            <section id="about" class="mb-16">
+                <h2 class="text-3xl font-bold mb-6 text-center md:text-left text-white" data-aos="fade-down">Intro</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <article
+                        class="bg-gray-800 shadow-md rounded-lg p-6 hover:scale-105 transition-transform duration-300 imgBox"
+                        data-aos="fade-right">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-100">👨‍🎓 교육 및 활동</h3>
+                        <ul class="text-gray-100 leading-relaxed text-[3.5vw]">
+                            <li>👉 스마트웹디자인 & 프론트엔드 교육 수료</li>
+                            <li>👉 새마을금고 스마트폰뱅킹 리뉴얼구축</li>
+                            <li>👉 티웨이항공 홈페이지 퍼블리싱 운영</li>
+                            <li>👉 신한투자증권 홈페이지의 퍼블리싱 운영</li>
+                            <li>👉 천재교육의 milkT 퍼블리싱 운영</li>
+                            <li>👉 KT멤버십앱 운영(진행중)</li>
+                        </ul>
+                    </article>
+                    <article
+                        class="bg-gray-800 shadow-md rounded-lg p-6 hover:scale-105 transition-transform duration-300 imgBox left"
+                        data-aos="fade-left">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-100">📖 자격증</h3>
+                        <ul class="text-gray-100 leading-relaxed text-[3.5vw]">
+                            <li>👉 웹디자인기능사</li>
+                            <li>👉 컴퓨터그래픽스운용기능사</li>
+                            <li>👉 GTQ1급</li>
+                            <li>👉 컴퓨터활용능력2급</li>
+                        </ul>
+                    </article>
+                    <article
+                        class="bg-gray-800 shadow-md rounded-lg p-6 hover:scale-105 transition-transform duration-300 imgBox"
+                        data-aos="fade-right">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-100">🏀 취미</h3>
+                        <ul class="text-gray-100 leading-relaxed text-[3.5vw]">
+                            <li>👉 영화 / 애니메이션 감상</li>
+                            <li>👉 러닝</li>
+                            <li>👉 기타연주</li>
+                            <li>👉 노래부르기</li>
+                            <li>👉 일어공부</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+            <section id="skill" class="mb-16">
+                <h2 class="text-3xl font-bold mb-6 text-center md:text-left text-white" data-aos="fade-down">Skill</h2>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="flex flex-col items-center bg-gray-800 shadow-md rounded-lg p-4 hover:scale-105 transition-transform duration-300"
+                        data-aos="fade-up">
+                        <i class="fa-brands fa-html5 text-4xl text-red-500 mb-1"></i>
+                        <h3 class="text-lg font-semibold text-gray-100">HTML5</h3>
+                    </div>
+                    <div class="flex flex-col items-center bg-gray-800 shadow-md rounded-lg p-4 hover:scale-105 transition-transform duration-300"
+                        data-aos="fade-up">
+                        <i class="fa-brands fa-css3 text-4xl text-blue-500 mb-1"></i>
+                        <h3 class="text-lg font-semibold text-gray-100">CSS3</h3>
+                    </div>
+                    <div class="flex flex-col items-center bg-gray-800 shadow-md rounded-lg p-4 hover:scale-105 transition-transform duration-300"
+                        data-aos="fade-up">
+                        <i class="fa-brands fa-figma text-4xl text-white mb-1"></i>
+                        <h3 class="text-lg font-semibold text-gray-100">FIGMA</h3>
+                    </div>
+                    <div class="flex flex-col items-center bg-gray-800 shadow-md rounded-lg p-4 hover:scale-105 transition-transform duration-300"
+                        data-aos="fade-up">
+                        <i class="fa-brands fa-js text-4xl text-yellow-500 mb-1"></i>
+                        <h3 class="text-lg font-semibold text-gray-100">JAVASCRIPT / JQUERY</h3>
+                    </div>
+                    <div class="flex flex-col items-center bg-gray-800 shadow-md rounded-lg p-4 hover:scale-105 transition-transform duration-300"
+                        data-aos="fade-up">
+                        <i class="fa-brands fa-react text-4xl text-teal-400 mb-1"></i>
+                        <h3 class="text-lg font-semibold text-gray-100">REACT</h3>
+                    </div>
+                </div>
+            </section>
+            <section id="project" class="mb-16">
+                <h2 class="text-3xl font-bold mb-6 text-center md:text-left text-white" data-aos="fade-down">Project
+                </h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <article
+                        class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300 left imgBox"
+                        data-aos="fade-left">
+                        <img class="w-full h-48 object-cover" src="images/mg01.jpg" alt="">
+                        <div class="p-6">
+                            <h3 class="text-md font-semibold mb-4 text-gray-100 text-[4vw] text-center">새마을금고
+                                스마트폰뱅킹 리뉴얼구축</h3>
+                            <div class="space-x-2 mb-4 flex justify-center">
+                                <span
+                                    class="bg-gray-200 text-xs px-2 py-0.5 rounded-md text-gray-700 border-gray-300">HTML5</span>
+                                <span
+                                    class="bg-gray-200 text-xs px-2 py-0.5 rounded-md text-gray-700 border-gray-300">CSS3</span>
+                                <span
+                                    class="bg-gray-200 text-xs px-2 py-0.5 rounded-md text-gray-700 border-gray-300">JAVASCRIPT</span>
+                            </div>
+                            <div class="space-x-2">
+                                <a href="https://www.kfcc.co.kr/" target="_blank"
+                                    class="text-sm bg-gray-900 text-white px-3 py-3 rounded block text-center">바로가기</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article
+                        class=" bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300 right imgBox"
+                        data-aos="fade-right">
+                        <img class="w-full h-48 object-cover" src="images/tway01.jpg" alt="">
+                        <div class="p-6">
+                            <h3 class="text-md font-semibold mb-4 text-gray-100 text-[4vw] text-center">티웨이항공
+                                홈페이지 운영</h3>
+                            <div class="space-x-2 mb-4 flex justify-center">
+                                <span
+                                    class="bg-gray-200 text-xs px-2 py-0.5 rounded-md text-gray-700 border-gray-300">HTML5</span>
+                                <span
+                                    class="bg-gray-200  text-xs px-2 py-0.5 rounded-md text-gray-700 border-gray-300">CSS3</span>
+                                <span
+                                    class="bg-gray-200 text-xs px-2 py-0.5 rounded-md text-gray-700 border-gray-300">JAVASCRIPT</span>
+                            </div>
+                            <div class="space-x-2">
+                                <a href="https://m.twayair.com/app/main" target="_blank"
+                                    class="text-sm bg-gray-900 text-white px-3 py-3 rounded block text-center">바로가기</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article
+                        class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300 left imgBox"
+                        data-aos="fade-left">
+                        <img class="w-full h-48 object-cover" src="images/sht.jpg" alt="">
+                        <div class="p-6">
+                            <h3 class="text-md font-semibold mb-4 text-gray-100 text-[4vw] text-center">신한투자증권
+                                홈페이지의 운영</h3>
+                            <div class="space-x-2 mb-4 flex justify-center">
+                                <span
+                                    class="bg-gray-200 text-xs px-2 py-0.5 rounded-md text-gray-700 border-gray-300">HTML5</span>
+                                <span
+                                    class="bg-gray-200 text-xs px-2 py-0.5 rounded-md text-gray-700 border-gray-300">CSS3</span>
+                                <span
+                                    class="bg-gray-200 text-xs px-2 py-0.5 rounded-md text-gray-700 border-gray-300">JAVASCRIPT</span>
+                            </div>
+                            <div class="space-x-2">
+                                <a href="https://m.shinhansec.com/" target="_blank"
+                                    class="text-sm bg-gray-900 text-white px-3 py-3 rounded block text-center">바로가기</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article
+                        class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300 right imgBox"
+                        data-aos="fade-right">
+                        <img class="w-full h-48 object-cover" src="images/mkt.jpg" alt="">
+                        <div class="p-6">
+                            <h3 class="text-md font-semibold mb-4 text-gray-100 text-[4vw] text-center">천재교육
+                                milkT 운영</h3>
+                            <div class="space-x-2 mb-4 flex justify-center">
+                                <span
+                                    class="bg-gray-200 text-xs px-2 py-0.5 rounded-md text-gray-700 border-gray-300">HTML5</span>
+                                <span
+                                    class="bg-gray-200 text-xs px-2 py-0.5 rounded-md text-gray-700 border-gray-300">CSS3</span>
+                                <span
+                                    class="bg-gray-200 text-xs px-2 py-0.5 rounded-md text-gray-700 border-gray-300">JAVASCRIPT</span>
+                            </div>
+                            <div class="space-x-2">
+                                <a href="https://m.milkt.co.kr" target="_blank"
+                                    class="text-sm bg-gray-900 text-white px-3 py-3 rounded block text-center">바로가기</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article
+                        class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300 left imgBox"
+                        data-aos="fade-left">
+                        <img class="w-full h-48 object-cover" src="images/kt.jpg" alt="">
+                        <div class="p-6">
+                            <h3 class="text-md font-semibold mb-4 text-gray-100 text-[4vw] text-center">KT멤버십 앱
+                                운영 (진행중)</h3>
+                            <div class="space-x-2 mb-4 flex justify-center">
+                                <span
+                                    class="bg-gray-200 text-xs px-2 py-0.5 rounded-md text-gray-700 border-gray-300">HTML5</span>
+                                <span
+                                    class="bg-gray-200 text-xs px-2 py-0.5 rounded-md text-gray-700 border-gray-300">CSS3</span>
+                                <span
+                                    class="bg-gray-200 text-xs px-2 py-0.5 rounded-md text-gray-700 border-gray-300">JAVASCRIPT</span>
+                            </div>
+                            <div class="space-x-2">
+                                <a href="https://m.membership.kt.com/main/MainInfo.do" target="_blank"
+                                    class="text-sm bg-gray-900 text-white px-3 py-3 rounded block text-center">바로가기</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section id="contact" class="md:mb-16">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="flex flex-col justify-center gap-y-4 items-center">
+                        <a href="https://github.com/qjagkrdldi" target="_blank"
+                            class="flex items-center space-x-2 text-white hover:text-blue-500 transition-all duration-300"
+                            data-aos="fade-down">
+                            <i class=" fa-brands fa-github"></i>
+                            <span>Github</span>
+                        </a>
+                        <a href="https://www.youtube.com/@bh_story" target="_blank"
+                            class="flex items-center space-x-2 text-white hover:text-red-600 transition-all duration-300"
+                            data-aos="fade-right">
+                            <i class=" fa-brands fa-youtube"></i>
+                            <span>Youtube</span>
+                        </a>
+                        <a href="https://www.instagram.com/b_hak2" target="_blank"
+                            class="flex items-center space-x-2 text-white hover:text-pink-700 transition-all duration-300"
+                            data-aos="fade-up">
+                            <i class=" fa-brands fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!------------------------------------------ pc 컨텐츠 시작 -------------------------------------->
+    <div id="container" class="hidden md:block">
+        <h2 class="wellcome"></h2>
+        <dotlottie-player class="lottieCat"
+            src="https://lottie.host/321f9d7f-4d7a-4562-accb-18c021310f89/3AcghHHOya.lottie" background="transparent"
+            speed=".4" style="width: 100px; height: 100px; position:absolute; right:0; top:-76px" loop autoplay>
+        </dotlottie-player>
+        <div class="box first"></div>
+        <!-- 천재교육-->
+        <div class="box gall mm cod">
+            <img src="images/chunjae.jpg" alt="천재교육">
+            <div class="bkbox"></div>
+            <p><span>천재교육</span><br>Project</p>
+        </div>
+        <div class="pop">
+            <div class="det">
+                <h2><span class="dc"></span>천재교육</h2>
+                <p class="p1"></p>
+                <h3>Production Process</h3>
+                <p class="p2">
+                    <strong>2024. 1 ~ 2024. 12 </strong><br><br>
+                    천재교육 밀크T 홈페이지 운영퍼블리싱 <br>
+                    (밀크T홈페이지 및 랜딩페이지 퍼블리싱 작업)
+                </p>
+                <h4>SKILL</h4>
+                <p class="p3">html & css & js</p>
+                <div class="viewBt">
+                    <a href="https://mid.milkt.co.kr/Main/frm_Main.aspx" target="_blank">VIEW</a>
+                </div>
+                <img src="works/chunjaeCont.jpg" alt="천재교육">
+            </div>
+            <a href="#" class="close"></a>
+        </div>
+        <!-- 신한투자증권-->
+        <div class="box gall mm cod">
+            <img src="images/shinHan.jpg" alt="신한투자증권">
+            <div class="bkbox"></div>
+            <p><span>신한투자증권</span><br>Project</p>
+        </div>
+        <div class="pop">
+            <div class="det">
+                <h2><span class="dc"></span>신한투자증권</h2>
+                <p class="p1"></p>
+                <h3>Production Process</h3>
+                <p class="p2">
+                    <strong>2022. 12 ~ 2024. 12 </strong><br><br>
+                    신한투자증권 홈페이지 운영퍼블리싱 <br>
+                    (홈페이지수정, 및 신규페이지 구축 작업)
+                </p>
+                <h4>SKILL</h4>
+                <p class="p3">html & css & js</p>
+                <div class="viewBt">
+                    <a href="https://www.shinhansec.com/" target="_blank">VIEW</a>
+                </div>
+                <img src="works/shinHanCont.jpg" alt="신한투자증권">
+            </div>
+            <a href="#" class="close"></a>
+        </div>
+        <!-- tway-->
+        <div class="box gall mm cod">
+            <img src="images/tway.jpg" alt="tway">
+            <div class="bkbox"></div>
+            <p><span>t'way</span><br>Project</p>
+        </div>
+        <div class="pop">
+            <div class="det">
+                <h2><span class="dc"></span>t'way</h2>
+                <p class="p1"></p>
+                <h3>Production Process</h3>
+                <p class="p2">
+                    <strong>2021.08 ~ 2022.04 </strong><br><br>
+                    티웨이항공 본사 내 상주하여 <br> A330 항공기 유입 관련 프로젝트,
+                    이벤트페이지 퍼블리싱 및<br> 홈페이지 유지보수를 진행하였습니다.
+                </p>
+                <h4>SKILL</h4>
+                <p class="p3">html & css & js</p>
+                <div class="viewBt">
+                    <a href="https://www.twayair.com/app/main" target="_blank">VIEW</a>
+                </div>
+                <img src="works/twayCont.jpg" alt="티웨이항공">
+            </div>
+            <a href="#" class="close"></a>
+        </div>
+        <!-- Demon Slayer-->
+        <div class="box gall mm cod">
+            <img src="images/demon.jpg" alt="귀멸의칼날">
+            <div class="bkbox"></div>
+            <p><span>Demon Slayer</p>
+        </div>
+        <div class="pop">
+            <div class="det">
+                <h2><span class="dc"></span>Demon Slayer</h2>
+                <p class="p1"></p>
+                <h3>Production Process</h3>
+                <p class="p2">
+                    귀멸의칼날 애니메이션 명대사로 만들어본  재미있는 편지형태의 
+                    화면입니다. <br> 마우스를 상하좌우로 움직이면 편지봉투가 같이 움직이게
+                    만들어 보았습니다.
+                </p>
+                <h4>SKILL</h4>
+                <p class="p3">html & css & js</p>
+                <div class="viewBt">
+                    <a href="view/Demon Slayer/index.html" target="_blank">VIEW</a>
+                </div>
+                <img src="works/demonGif.gif" alt="귀멸의칼날">
+            </div>
+            <a href="#" class="close"></a>
+        </div>
+        <!-- 케이티 멤버십 페스타-->
+        <div class="box gall mm cod">
+            <img src="images/kmf.png" alt="케이티 멤버십 페스타">
+            <div class="bkbox"></div>
+            <p><span>KT membership festa</p>
+        </div>
+        <div class="pop">
+            <div class="det">
+                <h2><span class="dc"></span>케이티 멤버십 페스타</h2>
+                <p class="p1"></p>
+                <h3>Production Process</h3>
+                <p class="p2">
+                    KT에서 진행한 이벤트입니다. <br>
+                    케멤페 라는 이름의 이벤트이며,
+                    KT멤버십 고객이면 참여가능한 전시, 쇼핑 특가전 등등 <br>
+                    여러 이벤트가 준비되어있는 페이지입니다.
+                </p>
+                <h4>SKILL</h4>
+                <p class="p3">html & css & js</p>
+                <div class="viewBt">
+                    <a href="http://beomhak.co.kr/view/kmf/html/kmFesta.html" target="_blank">VIEW</a>
+                </div>
+                <img src="works/kmf detail.png" alt="케이티 멤버십 페스타">
+            </div>
+            <a href="#" class="close"></a>
+        </div>
+        <!-- burger-->
+        <div class="box gall mm cod">
+            <img src="images/burger_thumb.png" alt="burger">
+            <div class="bkbox"></div>
+            <p><span>LBH.Burger</span></p>
+        </div>
+        <div class="pop">
+            <div class="det">
+                <h2><span class="dc"></span>LBH.Burger</h2>
+                <p class="p1"></p>
+                <h3>Production Process</h3>
+                <p class="p2">
+                    flex 기능을 이용하여 간단한 반응형 햄버거홈페이지를 만들어 보았습니다. <br>
+                    m사, b사의 이미지를 사용하였습니다.
+                </p>
+                <h4>SKILL</h4>
+                <p class="p3">html & css & js</p>
+                <div class="viewBt">
+                    <a href="view/burger/index.html" target="_blank">VIEW</a>
+                </div>
+                <img src="works/burger.png" alt="LBH버거">
+            </div>
+            <a href="#" class="close"></a>
+        </div>
+        <!-- Flower Women-->
+        <div class="box gall mm design">
+            <img src="images/1.png" alt="플라워우먼">
+            <div class="bkbox"></div>
+            <p><span>Flower Women</span></p>
+        </div>
+        <div class="pop">
+            <div class="det">
+                <h2><span class="dc"></span>FLOWER WOMEN</h2>
+                <p class="p1"></p>
+                <h3>Production Process</h3>
+                <p class="p2">포토샵으로만든 디자인입니다.<br>
+                    여자모델과 꽃을 합성하여 몽환적인 느낌을 표현하였습니다.<br>
+                </p>
+                <h4>SKILL</h4>
+                <p class="p3">photoshop</p>
+                <img src="works/gr1.jpg" alt="플라워우먼 이미지">
+            </div>
+            <a href="#" class="close"></a>
+        </div>
+
+        <!-- Merry Christmas-->
+        <div class="box gall mm design">
+            <img src="images/merry.png" alt="Merry Christmas">
+            <div class="bkbox"></div>
+            <p><span>Merry Christmas</span></p>
+        </div>
+        <div class="pop">
+            <div class="det">
+                <h2><span class="dc"></span>Merry Christmas</h2>
+                <p class="p1"></p>
+                <h3>Production Process</h3>
+                <p class="p2">크리스마스를 기념하여<br>
+                    눈내리는 효과를 Random 함수를 이용하여<br>
+                    만들어보았습니다.
+                </p>
+                <h4>SKILL</h4>
+                <p class="p3">html & css & js</p>
+                <div class="viewBt">
+                    <a href="view/snow/index.html" target="_blank">VIEW</a>
+                </div>
+                <img src="works/merry.png" alt="크리스마스 이미지">
+                <img src="works/snow.gif" alt="크리스마스 이미지" style="padding-bottom: 50px;">
+            </div>
+            <a href="#" class="close"></a>
+        </div>
+        <!-- Cloud A LA MODE-->
+        <div class="box gall mm design">
+            <img src="images/cloud_thumb.jpg" alt="CLOUD A LA MODE">
+            <div class="bkbox"></div>
+            <p><span>CLOUD A LA MODE</span></p>
+        </div>
+        <div class="pop">
+            <div class="det">
+                <h2><span class="dc"></span>CLOUD A LA MODE</h2>
+                <p class="p1"></p>
+                <h3>Production Process</h3>
+                <p class="p2">Crew a la mode 홈페이지를 참조하여
+                    반응형으로 만들어보았습니다. <br>
+                    scrolla.js와 splitting.js 를 활용하여 <br>
+                    스크롤내릴때 애니메이션 효과를 적용하였습니다.
+                </p>
+                <h4>SKILL</h4>
+                <p class="p3">html & css & js</p>
+                <div class="viewBt">
+                    <a href="view/Cloud/index.html" target="_blank">VIEW</a>
+                </div>
+                <img src="works/cloud.jpg" alt="CLOUD A LA MODE">
+            </div>
+            <a href="#" class="close"></a>
+        </div>
+        <!-- maserati-->
+        <div class="box gall mm cod">
+            <img src="images/7.png" alt="마세라티">
+            <div class="bkbox"></div>
+            <p><span>Maserati</span></p>
+        </div>
+        <div class="pop">
+            <div class="det">
+                <h2><span class="dc"></span>MASERATI</h2>
+                <p class="p1"></p>
+                <h3>Production Process</h3>
+                <p class="p2">마세라티의 홈페이지를 리디자인하였습니다.<br>
+                    메인페이지와 서브페이지 7개로 구성하였으며, 서브1에는<br>
+                    마세라티의 역사를 나타내는내용, 2페이지는 차량소개, 3페이지는 이벤트<br>
+                    4페이지는 기술프로그램을 5페이지는 브로슈어 다운로드페이지를 넣었으며<br>
+                    회원가입홈페이지에 폼태그를 넣어 입력창을 만들었습니다.</p>
+                <h4>SKILL</h4>
+                <p class="p3">html & css & js</p>
+                <div class="viewBt">
+                    <a href="view/maserati/index.html" target="_blank">VIEW</a>
+                </div>
+                <img src="works/ms.jpg" alt="마세라티 이미지">
+            </div>
+            <a href="#" class="close"></a>
+        </div>
+        <!-- Todo-->
+        <div class="box gall mm cod">
+            <img src="images/todo_thum.png" alt="ToDoList">
+            <div class="bkbox"></div>
+            <p><span>ToDoList</span></p>
+        </div>
+        <div class="pop">
+            <div class="det">
+                <h2><span class="dc"></span>ToDoList</h2>
+                <p class="p1"></p>
+                <h3>Production Process</h3>
+                <p class="p2">
+                    javascript를 이용해 TODOLIST 를 만들어보았습니다. <br>
+                    input 박스에 텍스트를 입력후 enter or click 이벤트를 주면<br>
+                    하단에 리스트가 생기고, 체크기능과 삭제, 전체삭제 기능을 사용할 수 있는<br>
+                    간단한 TODOLIST 형태를 만들어보았습니다.
+                </p>
+                <h4>SKILL</h4>
+                <p class="p3">html & css & js</p>
+                <div class="viewBt">
+                    <a href="view/Todo/Todo.html" target="_blank">VIEW</a>
+                </div>
+                <img src="works/tod.png" alt="ToDoList 이미지">
+            </div>
+            <a href="#" class="close"></a>
+        </div>
+        <!-- Calculater-->
+        <div class="box gall mm cod">
+            <img src="images/cal_thum.png" alt="Calculater">
+            <div class="bkbox"></div>
+            <p><span>Calculater</span></p>
+        </div>
+        <div class="pop">
+            <div class="det">
+                <h2><span class="dc"></span>Calculater</h2>
+                <p class="p1"></p>
+                <h3>Production Process</h3>
+                <p class="p2">
+                    javascript를 이용해 Calculater 를 만들어보았습니다. <br>
+                    input 태그 안에 onclick 속성을 이용해 value 값을 노출시켜<br>
+                    eval 값으로 계산을 할수있도록 간단하게 만들어보았습니다.
+                </p>
+                <h4>SKILL</h4>
+                <p class="p3">html & css & js</p>
+                <div class="viewBt">
+                    <a href="view/calculater/calculater.html" target="_blank">VIEW</a>
+                </div>
+                <img src="works/calc.png" alt="Calculater 이미지">
+            </div>
+            <a href="#" class="close"></a>
+        </div>
+        <!-- bvlgari-->
+        <div class="box gall mm cod">
+            <img src="images/4.png" alt="불가리 웹디자인+코딩">
+            <div class="bkbox"></div>
+            <p><span>BVLGARI</span></p>
+        </div>
+        <div class="pop">
+            <div class="det">
+                <h2><span class="dc"></span>BVLGARI</h2>
+                <p class="p1"></p>
+                <h3>Production Process</h3>
+                <p class="p2">불가리의 홈페이지를 만들었습니다.<br>
+                    그리드기능으로 간편하게 카테고리를 배치하였습니다.<br>
+                </p>
+                <h4>SKILL</h4>
+                <p class="p3">html & css</p>
+                <div class="viewBt">
+                    <a href="view/bvlgari/index.html" target="_blank">VIEW</a>
+                </div>
+                <img src="works/bvl.jpg" alt="불가리이미지">
+            </div>
+            <a href="#" class="close"></a>
+        </div>
+        <!-- 현대자동차-->
+        <div class="box gall mm cod">
+            <img src="images/22.png" alt="현대자동차 웹디자인+코딩">
+            <a href="#">
+                <div class="bkbox"></div>
+                <p><span>Hyundai</span></p>
+            </a>
+        </div>
+        <div class="pop">
+            <div class="det">
+                <h2><span class="dc"></span>HYUNDAI</h2>
+                <p class="p1"></p>
+                <h3>Production Process</h3>
+                <p class="p2">현대자동차의 홈페이지를 디자인하였습니다.<br>
+                    세가지 서브의 형태로 경영철학,뉴스 연혁부분을 만들어보았습니다.<br>
+                    비주얼부분의 기능을 자바스크립트 소스활용으로하여<br>
+                    이미지슬라이드형태로 자동으로 넘어가도록 설정하였습니다.</p>
+                <h4>SKILL</h4>
+                <p class="p3">html & css & js</p>
+                <div class="viewBt">
+                    <a href="view/hyundai/index.html" target="_blank">VIEW</a>
+                </div>
+                <img src="works/hd.jpg" alt="현대자동차이미지">
+            </div>
+            <a href="#" class="close"></a>
+        </div>
+        <!-- RAINDROP-->
+        <div class="box gall mm cod">
+            <img src="images/rain.jpg" alt="raindrop">
+            <a href="#">
+                <div class="bkbox"></div>
+                <p><span>RAIN DROP</span></p>
+            </a>
+        </div>
+        <div class="pop">
+            <div class="det">
+                <h2><span class="dc"></span>RAIN DROP</h2>
+                <p class="p1"></p>
+                <h3>Production Process</h3>
+                <p class="p2">일러스트레이터를 사용하여 디자인을하였고,<br>
+                    제이쿼리를 이용하여 애니메이션효과를 사용하였습니다.<br>
+                    비오는날의 고요하고 적막한 분위기를 저만의 느낌으로<br>
+                    표현해보았습니다.</p>
+                <h4>SKILL</h4>
+                <p class="p3">html & css & js</p>
+                <div class="viewBt">
+                    <a href="view/rain/index.html" target="_blank">VIEW</a>
+                </div>
+                <img src="works/rain_de.jpg" alt="rain drop 이미지">
+            </div>
+            <a href="#" class="close"></a>
+        </div>
+        <!-- RULLET-->
+        <div class="box gall mm cod">
+            <img src="images/rullet.jpg" alt="룰렛">
+            <a href="#">
+                <div class="bkbox"></div>
+                <p><span>RULLET</span></p>
+            </a>
+        </div>
+        <div class="pop">
+            <div class="det">
+                <h2><span class="dc"></span>RULLET</h2>
+                <p class="p1"></p>
+                <h3>Production Process</h3>
+                <p class="p2">룰렛형태의 이벤트배너를 디자인하였습니다.<br>
+                    가운데 버튼을 클릭하여 포인트를 얻는 형식으로 이뤄진 배너입니다.<br>
+                    제이쿼리소스를 활용하여 기능을 추가한뒤 포토샵과 일러스트로<br>
+                    꾸미는 작업을 하였습니다. </p>
+                <h4>SKILL</h4>
+                <p class="p3">html & css & js</p>
+                <div class="viewBt">
+                    <a href="view/rullet/index.html" target="_blank">VIEW</a>
+                </div>
+                <img src="works/rull.jpg" alt="룰렛 이미지">
+            </div>
+            <a href="#" class="close"></a>
+        </div>
+        <!-- stopwatch-->
+        <div class="box gall mm cod">
+            <img src="images/stop_thumb.png" alt="스톱워치 코딩">
+            <div class="bkbox"></div>
+            <p><span>STOPWATCH</span></p>
+        </div>
+        <div class="pop">
+            <div class="det">
+                <h2><span class="dc"></span>STOPWATCH</h2>
+                <p class="p1"></p>
+                <h3>Production Process</h3>
+                <p class="p2">일반적인 Timer 기능을 만들어보았습니다. <br>
+                    각각 분, 초, 밀리초 를 태그로 만들고 setInterval 기능을 이용하여<br>
+                    각각 시간이 돌아가도록 설정하고 일시정지 버튼과 정지버튼을 눌렀을때<br>
+                    clearInterval 로 정지가되도록 설정하였습니다.
+                </p>
+                <h4>SKILL</h4>
+                <p class="p3">html & css & js</p>
+                <div class="viewBt">
+                    <a href="view/stopwatch/stopwatch.html" target="_blank">VIEW</a>
+                </div>
+                <img src="works/stop_de.png" alt="stopwatch 이미지">
+            </div>
+            <a href="#" class="close"></a>
+        </div>
+        <!-- 로또추첨기-->
+        <div class="box gall mm cod">
+            <img src="images/lotto_thumb.png" alt="로또추첨기 디자인+코딩">
+            <div class="bkbox"></div>
+            <p><span>Lotto</span></p>
+        </div>
+        <div class="pop">
+            <div class="det">
+                <h2><span class="dc"></span>Lotto</h2>
+
+                <p class="p1"></p>
+                <h3>Production Process</h3>
+                <p class="p2">간단한 로또 추첨기를 만들어보았습니다. <br>
+                    추천버튼과 리셋버튼을 눌러 추천버튼을 누를시, 랜덤함수로<br>
+                    숫자를 배열에 넣고 div를 생성하여 숫자를 할당하는 형식입니다.<br>
+                    리셋버튼을 누를때는 다시 배열을 비워주고 innerHtml을 사용하여<br>
+                    빈태그로 만들어 주었습니다.
+                </p>
+                <h4>SKILL</h4>
+                <p class="p3">html & css</p>
+                <div class="viewBt">
+                    <a href="view/lotto/lotto.html" target="_blank">VIEW</a>
+                </div>
+                <img src="works/lotto.png" alt="로또추첨기 이미지">
+            </div>
+            <a href="#" class="close"></a>
+        </div>
+        <!-- 타이포그라피-->
+        <div class="box gall mm design">
+            <img src="images/20.png" alt="타이포그라피 작품">
+            <div class="bkbox"></div>
+            <p><span>TypoGraphy</span></p>
+        </div>
+        <div class="pop">
+            <div class="det">
+                <h2><span class="dc"></span>TYPOGRAPHY</h2>
+                <p class="p1"></p>
+                <h3>Production Process</h3>
+                <p class="p2">타이포그라피 디자인으로<br>
+                    세가지타입의 카피문구를 응용하여 포스터형식의 느낌으로<br>
+                    다양한 느낌을 주었습니다.</p>
+                <h4>SKILL</h4>
+                <p class="p3">illustrator</p>
+                <img src="works/ty.jpg" alt="타이포그라피 이미지">
+            </div>
+            <a href="#" class="close"></a>
+        </div>
+        <!-- man & women-->
+        <div class="box gall mm design">
+            <img src="images/9.png" alt="일러스트디자인">
+            <div class="bkbox"></div>
+            <p><span>Man & Women</span></p>
+        </div>
+        <div class="pop">
+            <div class="det">
+                <h2><span class="dc"></span>MAN & WOMEN</h2>
+                <p class="p1"></p>
+                <h3>Production Process</h3>
+                <p class="p2">일러스트레이터로만든 디자인입니다.<br>
+                    남자와 여자의 모습을 상상하여 일러스트레이터 로<br>
+                    디자인하였습니다.</p>
+                <h4>SKILL</h4>
+                <p class="p3">illustrator</p>
+                <img src="works/illus.jpg" alt="일러스트디자인 이미지">
+            </div>
+            <a href="#" class="close"></a>
+        </div>
+        <!-- logo design-->
+        <div class="box gall mm design">
+            <img src="images/24.png" alt="로고디자인 일러스트">
+            <div class="bkbox"></div>
+            <p><span>Logo Design</span></p>
+        </div>
+        <div class="pop">
+            <div class="det">
+                <h2><span class="dc"></span>LOGO DESIGN</h2>
+                <p class="p1"></p>
+                <h3>Production Process</h3>
+                <p class="p2">로고를 디자인하였습니다.<br>
+                    이니셜 LBH를 사용하여 4가지의 스타일로 제작하였습니다.</p>
+                <h4>SKILL</h4>
+                <p class="p3">illustrator</p>
+                <img src="works/lo.jpg" alt="로고디자인 상세페이지">
+            </div>
+            <a href="#" class="close"></a>
+        </div>
+        <!-- just do it-->
+        <div class="box gall mm design">
+            <img src="images/23.png" alt="그래픽디자인2">
+            <div class="bkbox"></div>
+            <p><span>JUST DO IT</span></p>
+        </div>
+        <div class="pop">
+            <div class="det">
+                <h2><span class="dc"></span>JUST DO IT</h2>
+                <p class="p1"></p>
+                <h3>Production Process</h3>
+                <p class="p2">포토샵으로 만든 그래픽디자인입니다.<br>
+                    아디다스의 카피문구 just do it을 인용하여 우주의모습과 타이포를<br>
+                    매치하여 합성하였습니다.</p>
+                <h4>SKILL</h4>
+                <p class="p3">photoshop</p>
+                <img src="works/gr2.jpg" alt="just do it 이미지">
+            </div>
+            <a href="#" class="close"></a>
+        </div>
+        <!-- polygon-->
+        <div class="box gall mm design">
+            <img src="images/12.png" alt="일러스트 폴리곤아트">
+            <div class="bkbox"></div>
+            <p><span>Polygon Art</span></p>
+        </div>
+        <div class="pop">
+            <div class="det">
+                <h2><span class="dc"></span>POLYGON ART</h2>
+                <p class="p1"></p>
+                <h3>Production Process</h3>
+                <p class="p2">폴리곤아트 디자인으로<br>
+                    자레드레토버전 조커와 고양이캐릭터를 일러스트레이터로 작업하여<br>
+                    폴리곤아트로 만들어 보았습니다.</p>
+                <h4>SKILL</h4>
+                <p class="p3">Illustrator</p>
+                <img src="works/pol.jpg" alt="폴리곤아트 이미지">
+            </div>
+            <a href="#" class="close"></a>
+        </div>
+        <!-- figma01-->
+        <div class="box gall mm design">
+            <img src="images/figma01.png" alt="동물">
+            <div class="bkbox"></div>
+            <p><span>Figma_Safari</span></p>
+        </div>
+        <div class="pop">
+            <div class="det">
+                <h2><span class="dc"></span>Figma_Safari</h2>
+                <p class="p1"></p>
+                <h3>Production Process</h3>
+                <p class="p2">피그마로 만든 동물 상세 페이지 입니다. <br>아이콘, 버튼, 카드를 분리하여 컴포넌트화 시켜 제작하였습니다.</p>
+                <h4>SKILL</h4>
+                <p class="p3">FIGMA</p>
+                <div class="viewBt">
+                    <a href="https://www.figma.com/design/C5Dj7KrtNetRdbCQBvjj1V/Untitled?node-id=4-687&t=6iSgsclbuAky4cJA-1" target="_blank">VIEW</a>
+                </div>
+                <!-- <img src="works/animal_figma.png" alt="폴리곤아트 이미지"> -->
+                <img src="works/figma_animal.gif" alt="피그마gif">
+            </div>
+            <a href="#" class="close"></a>
+        </div>
+    </div>
+
+    <!-- 프로필 -->
+    <div id="about_me" class="hidden md:block">
+        <div class="inner">
+            <p class="slogan"><span>Always be creative.</span> Lee Beom Hak</p>
+            <div class="profilBox">
+                <div class="frame">
+                    <div class="pro_img">
+                        <img src="images/profil.jpg" alt="프로필사진">
+                    </div>
+                </div>
+                <div class="profile_group">
+                    <dl>
+                        <dt>Name</dt>
+                        <dd>이범학</dd>
+                    </dl>
+                    <dl>
+                        <dt>Birth</dt>
+                        <dd>1992.08.01</dd>
+                    </dl>
+                    <dl>
+                        <dt>Blood Type</dt>
+                        <dd>B</dd>
+                    </dl>
+                    <dl>
+                        <dt>MBTI</dt>
+                        <dd>ESFJ</dd>
+                    </dl>
+                    <dl>
+                        <dt>Skill</dt>
+                        <dd>Photoshop, Illustrator, figma <br> Html5, CSS3, SCSS, Tailwind, GSAP <br>
+                            Javascript, jquery, React</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="">
+        <p class="copy">COPYRIGHT &copy; 2025,LEE BEOM HAK</p>
+    </div>
+</body>
+<script>
+    const Content = 'WELL COME...MY STORY!!';
+    const text = document.querySelector('.wellcome');
+    let count = 0;
+
+    function typing() {
+        text.textContent += Content[count++];
+
+        if (count > Content.length) {
+            text.textContent = '';
+            count = 0;
+        }
+    }
+
+    setInterval(typing, 200);
+
+    tailwind.config = {
+        darkMode: 'class',
+    }
+    AOS.init();
+    AOS.init({
+        duration: 2000,
+    })
+
+    $(function () {
+        let prevScrollTop = 0;
+        document.addEventListener('scroll', () => {
+            let nowScrollTop = $(window).scrollTop();
+
+            if (nowScrollTop > prevScrollTop) {
+                $('.m_cont header').addClass('active');
+            } else {
+                $('.m_cont header').removeClass('active');
+            }
+            prevScrollTop = nowScrollTop
+        })
+    })
+</script>
+
+</html>
