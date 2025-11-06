@@ -1,30 +1,29 @@
 window.onload = function () {
-    $('.mm').click(function () {//각 메뉴를 클릭했을때
-        $('.pop').css({ overflow: "hidden" });//pop스크롤없앰
+    $('.mm').click(function () {
+        $('.pop').css({ overflow: "hidden" });
         ///// 01 시작  /////
         $(this).stop().next().show(0, function () {
             $('.pop').stop().animate({ scrollTop: 0 }, 0);
             $(this).hide();
         });
         $(this).stop().next().show(500, function () {
-            $('body').css({ overflow: "hidden" });//body스크롤없앰
+            $('body').css({ overflow: "hidden" });
             $('.pop').css({ overflow: "auto" });
             $('.close').css({ right: 100 + 17 });
-            // });
-        });	  //이것(.mm) 안의  .pop을 보이게함
+        });	
         return false;
     });
 
-    $('.close').click(function () {//close눌렀을때
+    $('.close').click(function () {
         $('.close').css({ right: 100 });
-        $('.pop').hide(500); //.pop을 안보이게함
-        $('body').css({ overflowY: "auto" });//body스크롤생김
+        $('.pop').hide(500); 
+        $('body').css({ overflowY: "auto" });
         return false;
     });
 
     /////// 메뉴 클릭시 스크롤이동 효과
-    var scrollSpeed = 1000; //속도(1000=1초)
-    var esm = "easeInOutQuint" //easing설정
+    var scrollSpeed = 1000;
+    var esm = "easeInOutQuint" 
     $("#gnb a, .nav a, #gnb2 a, h1 a, #about_me a").click(function () {
         var target = $($(this).attr("href")).offset().top
         $("html,body").stop().animate({ scrollTop: target }, scrollSpeed, esm);
@@ -35,12 +34,12 @@ window.onload = function () {
         itemSelector: '.box',
         columnWidth: 0
     });
-    $(window).scroll(function () { //스크롤하는동안
+    $(window).scroll(function () { 
 
-        var b = $(document).scrollTop();//스크롤높이값(얼마만큼 스크롤했느냐)
-        $("#tt").text(b);//스크롤값 출력
+        var b = $(document).scrollTop();
+        $("#tt").text(b);
 
-        if ((b >= 190) && (b < 190 + $("#container").height())) {	//ART WORK 구간
+        if ((b >= 190) && (b < 190 + $("#container").height())) {	
             $("#gnb li a").css({ color: "#767676", fontWeight: "normal" });
             $("#gnb li:eq(1) a").css({ color: "#E50914", fontWeight: "bold" });
         }
@@ -101,7 +100,6 @@ window.onload = function () {
     gsap.registerPlugin(ScrollTrigger)
 
     gsap.utils.toArray('.imgBox').forEach(function (imgBox) {
-    // toArray 인스턴스를 배열로 만드는 메소드
     gsap.timeline({
       scrollTrigger: {
         trigger: imgBox,
