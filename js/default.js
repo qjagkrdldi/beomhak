@@ -1,5 +1,5 @@
 window.onload = function () {
-  $(".mm").click(function () {
+  $(".mm.design").click(function () {
     $(".pop").css({ overflow: "hidden" });
     ///// 01 시작  /////
     $(this)
@@ -17,7 +17,7 @@ window.onload = function () {
         $(".pop").css({ overflow: "auto" });
         $(".close").css({ right: 100 + 17 });
       });
-    return false;
+    // return false;
   });
 
   $(".close").click(function () {
