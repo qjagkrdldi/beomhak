@@ -302,7 +302,7 @@ body {
   font-size: 25px;
   color: #fff;
   font-weight: 400;
-  padding-top: 15px;
+  padding-top: 40px;
 }
 
 .pop p {
@@ -311,7 +311,7 @@ body {
 }
 
 .pop .p1 {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #6f6f6f;
 }
 
 .pop .p2 {
@@ -368,7 +368,7 @@ body {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     margin-right: 18px;
-    color:#fff;
+    color:#6f6f6f;
     font-size: 45px;
 }
 
