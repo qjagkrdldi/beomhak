@@ -590,10 +590,6 @@ footer {
   color: #fff;
   .inner {
     padding: 70px 150px;
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
     h1 {
       cursor: pointer;
       font-size: 30px;
@@ -756,7 +752,16 @@ footer {
   }
   .cont05 {
     .inner {
-        padding: 4.6875vw 4.6875vw 12.5vw
+      padding: 4.6875vw 4.6875vw 12.5vw;
+      .swiper01 {
+        .swiper-slide {
+          display: -webkit-box;
+          -webkit-line-clamp: 5;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+      }
+
     }
 }
   }
