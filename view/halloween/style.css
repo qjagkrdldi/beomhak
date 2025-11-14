@@ -408,6 +408,10 @@ header.fixed .search {
 .container p {
   color:rgb(220, 92, 12);
   line-height: 1.8;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .cont01 {
   padding: 0 5% 10% 5%;
@@ -586,6 +590,10 @@ footer {
   color: #fff;
   .inner {
     padding: 70px 150px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
     h1 {
       cursor: pointer;
       font-size: 30px;
