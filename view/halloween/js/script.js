@@ -41,12 +41,32 @@ AOS.init({
   offset: 0,
 });
 
+$(function(){
+  gsap.registerPlugin(ScrollTrigger);
+  let list = gsap.utils.toArray('.cont04 ul li');
+
+  let scrollTween = gsap.to(list,{
+    xPercent: - 100*(list.length - 1),
+    ease:'none',
+    scrollTrigger:{
+      trigger:'.cont04',
+      pin:true,
+      scrub:1,
+     start:'center center',
+      end:'200%',
+      // markers:true
+    }
+  });
+})
+
 //splitting.js
 $(function () {
   Splitting();
 });
 
 $(function () {
+  
+
   gsap
     .timeline({
       scrollTrigger: {

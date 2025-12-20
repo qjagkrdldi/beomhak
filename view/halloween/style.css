@@ -109,6 +109,7 @@ section {
 
 body {
   line-height: 1;
+  background-color: #000;
 }
 
 ol,
@@ -615,14 +616,18 @@ header.fixed .search {
 
 .cont04 .inner ul {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; 
+  padding:6% 0;
   justify-content: center;
-  gap: 20px;
+  gap: 10%;
 }
 
 .cont04 .inner ul li {
   background-color: #362c59;
-  width: 31.33%;
+  width: 400px; 
+  height: 400px; 
+  box-sizing: border-box; 
+  flex-shrink: 0;
   border-radius: 30px;
   overflow: hidden;
 }
@@ -847,12 +852,12 @@ footer .inner .lrGroup .rightFoot ul li:hover {
   }
 
   .cont04 .inner ul {
-    gap: 3.125vw;
+    gap: 10vw;
   }
 
   .cont04 .inner ul li {
-    min-width: 28vw;
-    min-height: 28vw;
+    width: 28vw;
+    height: 28vw;
   }
 
   /* cont05 */
