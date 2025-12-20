@@ -16,36 +16,7 @@ const progressBar = document.querySelector(".autoplay-progress .bar");
 const currentSlide = document.querySelector(".pro_counter .current");
 const totalSlides = document.querySelector(".pro_counter .total");
 
-var swiper = new Swiper(".mySwiper01", {
-  centeredSlides: true,
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".mySwiper01 .swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".mySwiper01 .swiper-button-next",
-    prevEl: ".mySwiper01 .swiper-button-prev",
-  },
-  on: {
-    init: function () {
-      totalSlides.textContent = String(this.slides.length).padStart(2, "0");
-      currentSlide.textContent = String(this.realIndex + 1).padStart(2, "0");
-    },
-    slideChange: function () {
-      currentSlide.textContent = String(this.realIndex + 1).padStart(2, "0");
-    },
-    autoplayTimeLeft(s, time, progress) {
-      progressBar.style.width = `${(1 - progress) * 100}%`;
-    },
-  },
-  resize() {
-    progressBar.style.width = `${(1 - progress) * 100}%`;
-  },
-});
+
 
 const lenis = new Lenis();
 
