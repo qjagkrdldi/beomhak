@@ -141,3 +141,15 @@ $("h1").click(function () {
     1000
   );
 });
+
+let prevScrollTop = 0;
+  document.addEventListener('scroll', () => {
+    let nowScrollTop = $(window).scrollTop();
+
+    if (nowScrollTop > prevScrollTop) {
+      $('header').addClass('active');
+    } else {
+      $('header').removeClass('active');
+    }
+    prevScrollTop = nowScrollTop
+  })

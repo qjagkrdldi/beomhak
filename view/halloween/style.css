@@ -236,6 +236,10 @@ header {
   background-color: transparent;
   z-index: 2;
   border-radius: 0 0 15px 15px;
+  transition: .5s;
+}
+header.active {
+  opacity: 0;
 }
 
 /* header nav */
