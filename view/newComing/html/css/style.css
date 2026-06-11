@@ -1411,9 +1411,13 @@ img {
     height: 100svh;
   }
   .balanceGame .main {
+    height: auto;
     overflow-y: auto;
   }
-  .balanceGame .balance {
+  .balanceGame .balance,
+  .balanceGame .prize,
+  .balanceGame .complete,
+  .balanceGame .early {
     height: 100svh;
     overflow: hidden;
   }
