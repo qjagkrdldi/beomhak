@@ -1400,19 +1400,18 @@ img {
 @media (max-width: 450px) {
   html {
     height: 100svh;
-    overflow: hidden;
   }
   body {
     height: 100svh;
-    overflow: hidden;
   }
   #app {
     height: 100svh;
-    overflow: hidden;
   }
   .ptevent {
     height: 100svh;
-    overflow: hidden;
+  }
+  .balanceGame .main {
+    overflow-y: auto;
   }
   .balanceGame .balance {
     height: 100svh;
