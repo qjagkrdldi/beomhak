@@ -1397,6 +1397,13 @@ img {
 }
 
 @media (max-width: 450px) {
+  html,
+  body {
+    height: 100dvh;
+  }
+  #app {
+    min-height: 100dvh;
+  }
   .balanceGame .balance {
     height: 100dvh;
   }
