@@ -600,7 +600,7 @@ img {
   text-align: center;
   font-size: 2.9rem;
   font-weight: 800;
-  padding-top: 12.7rem;
+  padding-top: 9rem;
 }
 
 .regForm {
@@ -1069,7 +1069,7 @@ img {
 .balanceGame .balance.prize h2 {
   width: 153px;
   margin: 0 auto;
-  padding: 127px 0 15px;
+  padding: 90px 0 15px;
 }
 .balanceGame .balance.prize h3 {
   width: 134px;
@@ -1208,7 +1208,7 @@ img {
   /* 개인정보 수집 동의 */
   .balanceGame .Privacy h1 {
     font-size: 4.5313vw;
-    padding-top: 19.8438vw;
+    padding-top: 14.0625vw;
   }
   .regForm .rows-itm .form-hd {
     font-size: 4.0625vw;
@@ -1382,7 +1382,7 @@ img {
   }
   .balanceGame .balance.prize h2 {
     width: 23.9063vw;
-    padding: 19.8438vw 0 2.3438vw;
+    padding: 14.0625vw 0 2.3438vw;
   }
   .balanceGame .balance.prize h3 {
     width: 20.9375vw;
