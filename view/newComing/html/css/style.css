@@ -1399,23 +1399,23 @@ img {
 
 @media (max-width: 450px) {
   html {
-    height: 100dvh;
+    height: 100svh;
     overflow: hidden;
   }
   body {
-    height: 100dvh;
+    height: 100svh;
     overflow: hidden;
   }
   #app {
-    height: 100dvh;
+    height: 100svh;
     overflow: hidden;
   }
   .ptevent {
-    height: 100dvh;
+    height: 100svh;
     overflow: hidden;
   }
   .balanceGame .balance {
-    height: 100dvh;
+    height: 100svh;
     overflow: hidden;
   }
 }
