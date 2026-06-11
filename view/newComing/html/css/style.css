@@ -167,6 +167,7 @@ body {
   margin: 0 auto;
   letter-spacing: -0.05em;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 * {
@@ -1397,14 +1398,24 @@ img {
 }
 
 @media (max-width: 450px) {
-  html,
+  html {
+    height: 100dvh;
+    overflow: hidden;
+  }
   body {
     height: 100dvh;
+    overflow: hidden;
   }
   #app {
-    min-height: 100dvh;
+    height: 100dvh;
+    overflow: hidden;
+  }
+  .ptevent {
+    height: 100dvh;
+    overflow: hidden;
   }
   .balanceGame .balance {
     height: 100dvh;
+    overflow: hidden;
   }
 }
