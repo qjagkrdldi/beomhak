@@ -173,6 +173,7 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 *:before,
 *:after {
@@ -232,6 +233,9 @@ img {
   max-width: 100%;
   height: auto;
   transition: all 0.4s ease-in-out;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
 }
 iframe,
 embed,
@@ -287,6 +291,14 @@ button:focus {
 .app_st a:focus,
 .app_st button:focus {
   outline: none;
+}
+a,
+button,
+input,
+textarea,
+select,
+img {
+    -webkit-tap-highlight-color: transparent;
 }
 
 /* --------------------------------------------
