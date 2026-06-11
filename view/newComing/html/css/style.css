@@ -443,7 +443,7 @@ img {
 .balanceGame .balance.ques .num {
   font-size: 0;
   width: 90px;
-  padding: 127px 0 28px;
+  padding: 90px 0 28px;
   display: block;
   margin: 0 auto;
 }
@@ -1123,7 +1123,7 @@ img {
   }
   .balanceGame .balance.ques .num {
     width: 14.0625vw;
-    padding: 19.8438vw 0 4.375vw;
+    padding: 14.8438vw 0 4.375vw;
   }
   .balanceGame .balance p {
     font-size: 5.3125vw;
