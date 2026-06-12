@@ -299,7 +299,7 @@ input,
 textarea,
 select,
 img {
-    -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* --------------------------------------------
@@ -554,30 +554,30 @@ img {
 .balanceGame .early .pop {
   text-align: center;
   width: 559px;
-  height: 670px;
+  height: 720px;
   background: url(../images/comple_bg.png) no-repeat center center / contain;
   position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 999999;
-  padding-inline: 121px;
+  padding-inline: 93px;
   padding-top: 97px;
 }
 .balanceGame .early .pop {
   padding-top: 200px;
-  padding-inline: 100px;
+  padding-inline: 85px;
 }
 .balanceGame .complete .pop h1 {
   margin: 0 auto;
-  font-size: 4rem;
+  font-size: 4.5rem;
   line-height: 1.2;
 }
 .balanceGame .complete .pop h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #f41b4e;
   font-weight: 500;
-  padding: 25px 0 42px;
+  padding: 20px 0 55px;
 }
 .balanceGame .complete .pop .compleBtn {
   display: flex;
@@ -586,7 +586,7 @@ img {
 }
 
 .balanceGame .early .pop p {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 600;
   line-height: 1.3;
 }
@@ -937,9 +937,12 @@ img {
   top: 80.56px;
   width: 124px;
   animation: mv01 3s linear infinite both;
+  will-change: transform;
+  transform: translateZ(0);
 }
 .balanceGame .balance .clawMachine .star {
   z-index: 9;
+  will-change: opacity;
 }
 .balanceGame .balance .clawMachine .star01 {
   width: 21px;
@@ -1187,23 +1190,22 @@ img {
   /* 미완료 팝업 */
   .balanceGame .complete .pop {
     width: 87.3438vw;
-    height: 104.6875vw;
-    padding-inline: 20.125vw;
+    height: 112.5000vw;
+    padding-inline: 14.125vw;
     padding-top: 16.625vw;
   }
   .balanceGame .complete .pop h2 {
-    padding-top: 3.625vw;
-    padding-bottom: 7.5vw;
+    padding: 3.1250vw 0 8.5938vw;
   }
   .balanceGame .complete .pop .compleBtn {
     flex-direction: column;
     gap: 2.6563vw;
   }
   .balanceGame .complete .pop h1 {
-    font-size: 6vw;
+    font-size: 7.0313vw
   }
   .balanceGame .complete .pop h2 {
-    font-size: 3.6875vw;
+    font-size: 4.6875vw;
   }
   /* 개인정보 수집 동의 */
   .balanceGame .Privacy h1 {
@@ -1270,12 +1272,12 @@ img {
   }
   .balanceGame .early .pop {
     width: 87.3438vw;
-    height: 104.6875vw;
+    height: 112.5000vw;
     padding-top: 31.25vw;
-    padding-inline: 15.625vw;
+    padding-inline: 13.2813vw;
   }
   .balanceGame .early .pop p {
-    font-size: 4.6875vw;
+    font-size: 5.4688vw;
   }
   /* 경품뽑기 */
   .balanceGame .balance .clawMachine {
@@ -1432,9 +1434,7 @@ img {
   .balanceGame .balance.Privacy {
     overflow-y: auto;
   }
-  .balanceGame .prize
-
- {
+  .balanceGame .prize {
     height: 100svh;
     overflow: hidden;
   }
