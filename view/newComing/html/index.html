@@ -156,7 +156,7 @@
                     <h1>이 브랜드, 이런 멤버십 혜택이 <br>있으면 좋겠다!</h1>
                     <div class="txtBox">
                         <textarea id="answer" maxlength="100"
-                            placeholder="원하는 제휴사, 멤버십 혜택을 자유롭게 작성해 주세요. (100자 이내)"></textarea>
+                            placeholder="원하는 제휴사, 멤버십 혜택을&#13;&#10;자유롭게 작성해 주세요. (100자 이내)"></textarea>
                         <span class="char-count"><span id="charNum">0</span>/100</span>
                     </div>
                     <a href="#a" class="stepBtn_A step5Btn">
@@ -183,7 +183,7 @@
                             </div>
                         </div>
                         <div class="rows-itm">
-                            <label for="hp" class="form-hd">휴대폰 번호</label>
+                            <label for="phone" class="form-hd">휴대폰 번호</label>
                             <div class="form-bd" id="hp_input">
                                 <input type="text" class="inp" id="phone" inputmode="numeric" maxlength="11"
                                     placeholder="예) 01012345678" />
@@ -372,6 +372,10 @@
             $('.step7Btn').click(function (e) {
                 e.preventDefault();
                 $('.event-con > .close').addClass('display')
+            })
+            $('.step5Btn, .closeBtn').click(function(e){
+                e.preventDefault();
+                $('.step5 textarea').val('');
             })
 
             $('.closeBtn, .gameCloseBtn').on('click', function (e) {
